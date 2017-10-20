@@ -1,4 +1,4 @@
-from tdm.lib.device import DddDevice, EntityRecognizer, DeviceWHQuery
+from tdm.lib.device import DddDevice, EntityRecognizer, DeviceWHQuery, DeviceAction
 
 
 
@@ -13,13 +13,22 @@ class RecipehelpDevice(DddDevice):
 		PARAMETERS = ["step_to_choose"]
 		def perform(self,step):
 			self._step = int(step[4:])
-			if step == "step1":
-				return [" Step one: Chop onions and garlic."]
-			elif step == "step2":
-				return ["other example"]
-			elif step == "step3":
-				return ["lol"]
+			return ["chose a step"]
 
-	class go_to_next(DeviceWHQuery):
+
+	class go_to_next(DeviceAction):
 		def perform(self):
 			self.device._step += 1
+			return True
+
+	class say_step(DeviceWHQuery):
+		def perform(self):
+			if self.device._step == 1:
+				return [" Step one: Chop onions and garlic."]
+			elif self.device._step == 2:
+				return ["other example"]
+			elif self.device._step == 3:
+				return ["lol"]
+			else:
+				return [str(self.device._step)]
+

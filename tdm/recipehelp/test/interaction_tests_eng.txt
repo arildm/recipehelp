@@ -1,2 +1,10 @@
 --- main menu
-S> What would you like to do?
+S> Do you want to know go to step?
+U> Step one
+S> Okay. Step one: Chop onions and garlic.
+
+--- next
+U> done
+S> Are you done with step one?
+U> Yes.
+S> Okay. Step two: Bring oil to heat in a pan.

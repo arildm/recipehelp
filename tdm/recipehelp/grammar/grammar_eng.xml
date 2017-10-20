@@ -1,39 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <grammar>
-	<individual name="step1">step one</individual>
-	<individual name="step2">step two</individual>
-	<individual name="step3">step three</individual>
+    <individual name="step1">step one</individual>
+    <individual name="step2">step two</individual>
+    <individual name="step3">step three</individual>
 
-	<question speaker="system" predicate="step_to_choose" type="wh_question">which step</question>
+    <individual name="True">Yes</individual>
+    <individual name="False">No</individual>
 
-	<question speaker="all" predicate="go_to_step" type="wh_question">go to step</question>
+    <question speaker="system" predicate="step_to_choose" type="wh_question">which step</question>
+
+    <question speaker="all" predicate="go_to_step" type="wh_question">go to step</question>
+ 
     <question speaker="user" predicate="go_to_step" type="wh_question">
         <one-of>
             <item>go to a step</item>
-            <item>go to <slot predicate="step_to_choose" type="individual"></slot> </item>
+            <item>go to hell</item>
         </one-of>
     </question>
 
-    <report action="go_to_step" status="ended">ok <slot predicate="hour_to_set" type="individual"></slot>:<slot predicate="minute_to_set" type="individual"></slot>.</report> 
-    <!-- when the system has completed the SetTime action (i.e. its postconditions are fulfilled) the system will report this by saying "The time was set to (hour_to_set) (minute_to_set)" where (hour_to_set) and (minute_to_set) are the arguments of these predicates as stored in the information state (shared.com) and used in executing the command -->
+<!--     <report action="go_to_step" status="ended">ok <slot predicate="hour_to_set" type="individual"></slot>:<slot predicate="minute_to_set" type="individual"></slot>.</report>  -->
+  
 
 <answer speaker="system" predicate="go_to_step">ok <slot predicate="go_to_step"/></answer>
 
-    <question speaker="all" predicate="go_to_next" type="wh_question"> <one-of><item> done </item> <item> next step </item> <item> then what? </item> </one-of> </question>
+<question speaker="system" predicate="done" type="wh_question">are you done</question>
+
+<question speaker="all" predicate="say_step" type="wh_question">tell me what to do</question>
+<question speaker="user" predicate="say_step" type="wh_question">tell me what to do</question>
+
+<answer speaker="system" predicate="say_step">ok <slot predicate="say_step"/></answer>
+
+
+
+
+<!--     <question speaker="all" predicate="go_to_next" type="wh_question"> <one-of><item> done </item> <item> next step </item> <item> then what? </item> </one-of> </question>
     <question speaker="user" predicate="go_to_next" type="wh_question">
         <one-of>
             <item>go to a step</item>
             <item>go to <slot predicate="step_to_choose" type="individual"></slot> </item>
         </one-of>
     </question>
+ -->
 
-
-  <question speaker="all" predicate="go_to_next" type="wh_question">
+  <action name="go_to_next">
     <one-of>
       <item>go to next step</item>
       <item>go to next </item>
     </one-of>
-  </question>
+  </action>
+
+  <report action="go_to_next" status="ended">went to next</report>
 
 
 

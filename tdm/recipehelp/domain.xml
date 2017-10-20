@@ -6,33 +6,42 @@
             <dev_query device="RecipehelpDevice" type="wh_question" predicate="go_to_step"/>
             <forget predicate="step_to_choose"/>
         </plan>
+        <postplan>
+            <jumpto type="resolve" question_type="wh_question" predicate="say_step"/>
+        </postplan>
     </goal>
 
   <goal type="perform" action="top">
 	<plan>
-		<findout type="alt_question">
-		<alt>
-			<resolve type="wh_question" predicate="go_to_step"/>
-		</alt>
-        <alt>
-            <resolve type="wh_question" predicate="go_to_next"/>
-        </alt>
-        </findout>
+        <forget_all/>
+		<findout type="goal"/>
 	</plan>
-    <postcond>
-      <device_activity_terminated action="go_to_step"/>
-    </postcond>
 	</goal>
 
- <goal type="resolve" question_type="wh_question" predicate="go_to_next">
+ <goal type="perform" action="go_to_next">
         <plan>
-            <findout type="wh_question" predicate="step_to_choose"/>
-            <dev_query device="RecipehelpDevice" type="wh_question" predicate="go_to_next"/>
-            <forget predicate="step_to_choose"/>
+ <!--            <findout type="wh_question" predicate="step_to_choose"/> -->
+            <dev_perform action="go_to_next" device="RecipehelpDevice" postconfirm="true"/>
+ <!--            <forget predicate="step_to_choose"/> -->
         </plan>
+    <postcond>
+      <device_activity_terminated action="go_to_next"/>
+    </postcond>
+    <postplan>
+      <jumpto type="resolve" question_type="wh_question" predicate="say_step"/>
+    </postplan>
     </goal>
 
-
+  <goal type="resolve" question_type="wh_question" predicate="say_step">
+        <plan>
+            <dev_query device="RecipehelpDevice" type="wh_question" predicate="say_step"/>
+            <!-- <findout type="wh_question" predicate="done"/>
+           <forget predicate="done"/> --> 
+        </plan>
+    <postplan>
+      <jumpto type="resolve" question_type="wh_question" predicate="say_step"/>
+    </postplan>
+    </goal>
 
 </domain>
 
