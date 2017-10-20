@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="RecipehelpOntology">
+    <sort name="step"/>
+    <individual name="step1" sort="step"/>
+    <individual name="step2" sort="step"/>
+    <individual name="step3" sort="step"/>
+    <predicate name="step_to_choose" sort="step"/>	
+    <predicate name="go_to_step" sort="string"/>
+    <predicate name="go_to_next" sort="string"/>
+</ontology>

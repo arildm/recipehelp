@@ -1,0 +1,13 @@
+{
+    "active_ddd": "recipehelp",
+    "asr": "none",
+    "ddds": [
+        "recipehelp"
+    ],
+    "repeat_questions": false,
+    "supported_languages": [
+        "eng"
+    ],
+    "use_recognition_profile": false,
+    "use_word_list_correction": false
+}

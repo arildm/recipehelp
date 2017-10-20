@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="RecipehelpDomain" is_super_domain="true">
+    <goal type="resolve" question_type="wh_question" predicate="go_to_step">
+        <plan>
+            <findout type="wh_question" predicate="step_to_choose"/>
+            <dev_query device="RecipehelpDevice" type="wh_question" predicate="go_to_step"/>
+            <forget predicate="step_to_choose"/>
+        </plan>
+    </goal>
+
+  <goal type="perform" action="top">
+	<plan>
+		<findout type="alt_question">
+		<alt>
+			<resolve type="wh_question" predicate="go_to_step"/>
+		</alt>
+        <alt>
+            <resolve type="wh_question" predicate="go_to_next"/>
+        </alt>
+        </findout>
+	</plan>
+    <postcond>
+      <device_activity_terminated action="go_to_step"/>
+    </postcond>
+	</goal>
+
+ <goal type="resolve" question_type="wh_question" predicate="go_to_next">
+        <plan>
+            <findout type="wh_question" predicate="step_to_choose"/>
+            <dev_query device="RecipehelpDevice" type="wh_question" predicate="go_to_next"/>
+            <forget predicate="step_to_choose"/>
+        </plan>
+    </goal>
+
+
+
+</domain>
+
+
+
