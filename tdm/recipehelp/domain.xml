@@ -32,11 +32,28 @@
     </postplan>
     </goal>
 
+ <goal type="perform" action="go_back">
+        <plan>
+ <!--            <findout type="wh_question" predicate="step_to_choose"/> -->
+            <dev_perform action="go_back" device="RecipehelpDevice" postconfirm="true"/>
+ <!--            <forget predicate="step_to_choose"/> -->
+        </plan>
+    <postcond>
+      <device_activity_terminated action="go_back"/>
+    </postcond>
+    <postplan>
+      <jumpto type="resolve" question_type="wh_question" predicate="say_step"/>
+    </postplan>
+    </goal>
+
+
   <goal type="resolve" question_type="wh_question" predicate="say_step">
         <plan>
             <dev_query device="RecipehelpDevice" type="wh_question" predicate="say_step"/>
             <!-- <findout type="wh_question" predicate="done"/>
            <forget predicate="done"/> --> 
+           <findout type="wh_question" predicate="done"/>
+           <forget predicate="done"/>
         </plan>
     <postplan>
       <jumpto type="resolve" question_type="wh_question" predicate="say_step"/>
@@ -44,6 +61,7 @@
     </goal>
 
 </domain>
+
 
 
 

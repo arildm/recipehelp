@@ -3,6 +3,8 @@
     <individual name="step1">step one</individual>
     <individual name="step2">step two</individual>
     <individual name="step3">step three</individual>
+    <individual name="step4">step four</individual>
+    <individual name="step5">step five</individual>
 
     <individual name="True">Yes</individual>
     <individual name="False">No</individual>
@@ -14,7 +16,7 @@
     <question speaker="user" predicate="go_to_step" type="wh_question">
         <one-of>
             <item>go to a step</item>
-            <item>go to hell</item>
+            <item>go to <slot predicate="step_to_choose" type="individual"></slot></item>
         </one-of>
     </question>
 
@@ -26,18 +28,24 @@
 <question speaker="system" predicate="done" type="wh_question">are you done</question>
 
 <question speaker="all" predicate="say_step" type="wh_question">tell me what to do</question>
-<question speaker="user" predicate="say_step" type="wh_question">tell me what to do</question>
+<question speaker="user" predicate="say_step" type="wh_question"> 
+    <one-of>
+      <item>tell me what to do</item>
+      <item>what should i do</item>
+    </one-of>
+</question>
 
-<answer speaker="system" predicate="say_step">ok <slot predicate="say_step"/></answer>
+<answer speaker="system" predicate="say_step"> ok <slot predicate="say_step"/></answer>
 
 
 
 
-<!--     <question speaker="all" predicate="go_to_next" type="wh_question"> <one-of><item> done </item> <item> next step </item> <item> then what? </item> </one-of> </question>
+ <!--    <question speaker="all" predicate="go_to_next" type="wh_question"> <one-of><item> done </item> <item> next step </item> <item> then what? </item> </one-of> </question>
     <question speaker="user" predicate="go_to_next" type="wh_question">
         <one-of>
             <item>go to a step</item>
-            <item>go to <slot predicate="step_to_choose" type="individual"></slot> </item>
+            <item>go to that step</item>
+         <item>go to <slot predicate="step_to_choose" type="individual"></slot> </item> 
         </one-of>
     </question>
  -->
@@ -51,7 +59,14 @@
 
   <report action="go_to_next" status="ended">went to next</report>
 
+  <action name="go_back">
+    <one-of>
+      <item>go to previous step</item>
+      <item>go back </item>
+    </one-of>
+  </action>
 
+  <report action="go_back" status="ended">went to the previous step</report>
 
 <action name="top">
     <np><indefinite>start view</indefinite></np>

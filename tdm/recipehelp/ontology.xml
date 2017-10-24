@@ -5,6 +5,8 @@
     <individual name="step1" sort="step"/>
     <individual name="step2" sort="step"/>
     <individual name="step3" sort="step"/>
+    <individual name="step4" sort="step"/>
+    <individual name="step5" sort="step"/>
 
     <individual name="True" sort="Boolean"/>
     <individual name="False" sort="Boolean"/>
@@ -13,5 +15,6 @@
     <predicate name="step_to_choose" sort="step"/>	
     <predicate name="go_to_step" sort="string"/>
     <action name="go_to_next"/>
+    <action name="go_back"/>
     <predicate name="say_step" sort="string"/>
 </ontology>
