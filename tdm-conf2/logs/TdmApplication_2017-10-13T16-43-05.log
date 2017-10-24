@@ -1,0 +1,2 @@
+2017-10-13 16:43:05,269 - TdmApplication - DEBUG - DddDb().__init__(name='ddds', default_ddds=[u'recipehelp'])
+2017-10-13 16:43:05,269 - TdmApplication - DEBUG - DddDb(): DB file name is '/home/gusmatssar/recipedialogue/tdm/ddds.json'

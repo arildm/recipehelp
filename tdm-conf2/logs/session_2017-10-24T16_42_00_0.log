@@ -1,0 +1,6 @@
+2017-10-24 16:42:43,465 - session_2017-10-24T16_42_00_0 - DEBUG - Backend._handle_event(Event(STOPPED, None, sender=IndependentGuiBackend, reason=None))
+2017-10-24 16:42:43,467 - session_2017-10-24T16_42_00_0 - DEBUG - EventDispatcher: dispatching event Event(STOPPED, None, sender=IndependentGuiBackend, reason=None)
+2017-10-24 16:42:43,467 - session_2017-10-24T16_42_00_0 - DEBUG - Backend._handle_event(Event(STOPPED, None, sender=GuiBackend, reason=None))
+2017-10-24 16:42:43,467 - session_2017-10-24T16_42_00_0 - DEBUG - EventDispatcher: dispatching event Event(STOPPED, None, sender=GuiBackend, reason=None)
+2017-10-24 16:42:43,467 - session_2017-10-24T16_42_00_0 - DEBUG - Backend._handle_event(Event(STOPPED, None, sender=CogloadModule, reason=None))
+2017-10-24 16:42:43,467 - session_2017-10-24T16_42_00_0 - DEBUG - EventDispatcher: dispatching event Event(STOPPED, None, sender=CogloadModule, reason=None)

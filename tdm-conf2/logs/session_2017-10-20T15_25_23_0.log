@@ -1,0 +1,566 @@
+2017-10-20 15:25:23,685 - session_2017-10-20T15_25_23_0 - DEBUG - Backend()
+2017-10-20 15:25:23,685 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.initialize()
+2017-10-20 15:25:23,714 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.add_module(DmeModule, args=[<bound method Backend.get_tis of <tdm.backend.Backend object at 0x7fca261e1dd0>>, False])
+2017-10-20 15:25:23,714 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.add_module(GenerateModule, args=[<bound method Backend.get_tis of <tdm.backend.Backend object at 0x7fca261e1dd0>>, 'eng'])
+2017-10-20 15:25:23,714 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.add_module(DeviceManager, args=[])
+2017-10-20 15:25:23,714 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.add_module(CogloadModule, args=[])
+2017-10-20 15:25:23,714 - session_2017-10-20T15_25_23_0 - INFO - TurnManager.enter_state(IDLE, __init__) (previous state was None)
+2017-10-20 15:25:23,714 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.add_module(GuiBackend, args=[<bound method Backend.get_tis of <tdm.backend.Backend object at 0x7fca261e1dd0>>, True, 'disabled'])
+2017-10-20 15:25:23,714 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.add_module(IndependentGuiBackend, args=[<bound method Backend.get_tis of <tdm.backend.Backend object at 0x7fca261e1dd0>>])
+2017-10-20 15:25:23,715 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.add_module(InterpretModule, args=[<bound method Backend.get_device_manager of <tdm.backend.Backend object at 0x7fca261e1dd0>>, <bound method Backend.get_tis of <tdm.backend.Backend object at 0x7fca261e1dd0>>, 'eng', False, True])
+2017-10-20 15:25:23,715 - session_2017-10-20T15_25_23_0 - DEBUG - Backend initialized
+2017-10-20 15:25:23,715 - session_2017-10-20T15_25_23_0 - DEBUG - Backend started in directory '/home/gusmatssar/recipedialogue/tdm'
+2017-10-20 15:25:23,715 - session_2017-10-20T15_25_23_0 - DEBUG - Backend uses TDM version '5.0.0'
+2017-10-20 15:25:23,715 - session_2017-10-20T15_25_23_0 - DEBUG - Backend uses backend config {u'active_ddd': u'recipehelp', u'ddds': [u'recipehelp'], u'asr': u'none', u'use_recognition_profile': False, u'use_word_list_correction': False, u'supported_languages': [u'eng'], u'repeat_questions': False}
+2017-10-20 15:25:23,715 - session_2017-10-20T15_25_23_0 - DEBUG - Backend uses language 'eng'
+2017-10-20 15:25:23,715 - session_2017-10-20T15_25_23_0 - DEBUG - running module InterpretModule
+2017-10-20 15:25:23,715 - session_2017-10-20T15_25_23_0 - DEBUG - running module DmeModule
+2017-10-20 15:25:23,717 - session_2017-10-20T15_25_23_0 - DEBUG - running module DeviceManager
+2017-10-20 15:25:23,717 - session_2017-10-20T15_25_23_0 - DEBUG - running module GenerateModule
+2017-10-20 15:25:23,717 - session_2017-10-20T15_25_23_0 - DEBUG - running module IndependentGuiBackend
+2017-10-20 15:25:23,717 - session_2017-10-20T15_25_23_0 - DEBUG - running module GuiBackend
+2017-10-20 15:25:23,717 - session_2017-10-20T15_25_23_0 - DEBUG - running module CogloadModule
+2017-10-20 15:25:23,718 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.handle_event_from_external_queue()
+2017-10-20 15:25:23,719 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_external_event(...)
+2017-10-20 15:25:23,719 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(REGISTER_BACKEND, None, sender=Backend, reason=None))
+2017-10-20 15:25:23,719 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(REGISTER_BACKEND, None, sender=Backend, reason=None)
+2017-10-20 15:25:23,719 - session_2017-10-20T15_25_23_0 - DEBUG - Backend communication: Backend is sending event {"content": null, "_sender": "Backend", "_reason": null, "event_type": "REGISTER_BACKEND"}
+2017-10-20 15:25:23,720 - session_2017-10-20T15_25_23_0 - DEBUG - Sent.
+2017-10-20 15:25:23,720 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.handle_event_from_external_queue()
+2017-10-20 15:25:23,729 - session_2017-10-20T15_25_23_0 - DEBUG - Backend communication: Backend received event {"content": null, "_sender": "Frontend", "_reason": null, "event_type": "FRONTEND_READY"}
+2017-10-20 15:25:23,729 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_external_event(...)
+2017-10-20 15:25:23,729 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(FRONTEND_READY, None, sender=Frontend, reason=None))
+2017-10-20 15:25:23,731 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(FRONTEND_READY, None, sender=Frontend, reason=None)
+2017-10-20 15:25:23,731 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(BACKEND_READY, None, sender=Backend, reason=None))
+2017-10-20 15:25:23,731 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(BACKEND_READY, None, sender=Backend, reason=None)
+2017-10-20 15:25:23,731 - session_2017-10-20T15_25_23_0 - DEBUG - Backend communication: Backend is sending event {"content": null, "_sender": "Backend", "_reason": null, "event_type": "BACKEND_READY"}
+2017-10-20 15:25:23,732 - session_2017-10-20T15_25_23_0 - DEBUG - Sent.
+2017-10-20 15:25:23,732 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.handle_event_from_external_queue()
+2017-10-20 15:25:23,736 - session_2017-10-20T15_25_23_0 - DEBUG - Backend communication: Backend received event {"content": null, "_sender": "Frontend", "_reason": null, "event_type": "START"}
+2017-10-20 15:25:23,736 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_external_event(...)
+2017-10-20 15:25:23,736 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(START, None, sender=Frontend, reason=None))
+2017-10-20 15:25:23,736 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(START, None, sender=Frontend, reason=None)
+2017-10-20 15:25:23,736 - session_2017-10-20T15_25_23_0 - DEBUG - InterpretModule handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 15:25:23,737 - session_2017-10-20T15_25_23_0 - DEBUG - DmeModule handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 15:25:23,737 - session_2017-10-20T15_25_23_0 - DEBUG - DmeModule posts Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None)
+2017-10-20 15:25:23,737 - session_2017-10-20T15_25_23_0 - INFO - running ISU module: update (Event(START, None, sender=Frontend, reason=None))
+2017-10-20 15:25:23,738 - session_2017-10-20T15_25_23_0 - DEBUG - <-<-<-<-<-<-<-IS->->->->->->>
+TIS:
+tis._ddd_manager: <tdm.ddd_manager.DddManager object at 0x7fca261e1e50>
+tis._logged_tis_format: diff
+tis._semantic_logic: <tdm.lib.semantic_logic.SemanticLogic object at 0x7fca259a7350>
+tis.active_ddd: Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})
+tis.cogload_level: LOW
+tis.cogload_management: False
+tis.cogload_strategy: None
+tis.conf_prediction_threshold.acknowledge: 0.8
+tis.conf_prediction_threshold.check: 0.6
+tis.conf_prediction_threshold.normal.acknowledge: 0.9
+tis.conf_prediction_threshold.normal.check: 0.6
+tis.conf_prediction_threshold.normal.trust: 1.01
+tis.conf_prediction_threshold.trust: 1.0
+tis.confidence_profiles.normal.acknowledge: 0.15
+tis.confidence_profiles.normal.check: 0.1
+tis.confidence_profiles.normal.trust: 0.3
+tis.confidence_profiles.relaxed.acknowledge: 0.35
+tis.confidence_profiles.relaxed.check: 0.4
+tis.confidence_profiles.relaxed.trust: 0.4
+tis.confidence_profiles.strict.acknowledge: 0.7
+tis.confidence_profiles.strict.check: 0.4
+tis.confidence_profiles.strict.trust: 0.8
+tis.current_time: 1508505923.74
+tis.ddds: [Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})]
+tis.device_manager: Device Manager: ['RecipehelpDevice']
+tis.device_outputs: Stack([])
+tis.high_cogload_onset_time: None
+tis.input_event: Event(START, None, sender=Frontend, reason=None)
+tis.language_code: eng
+tis.latest_moves: OpenQueue([#])
+tis.latest_moves_amb: {}
+tis.latest_speaker: None
+tis.logged_tis_format: diff
+tis.next_utterance.alts: []
+tis.next_utterance.context: {}
+tis.next_utterance.default_value: None
+tis.next_utterance.moves: OpenQueue([#])
+tis.next_utterance.plan_item: None
+tis.passive_mode: False
+tis.private.agenda: OpenQueue([#])
+tis.private.bel: {}
+tis.private.issues_being_accommodated: {}
+tis.private.nim: OpenQueue([#])
+tis.private.plan: Stack([do(top)])
+tis.private.tmp.sys.agenda: OpenQueue([#])
+tis.private.tmp.sys.bel: {}
+tis.private.tmp.sys.com: {}
+tis.private.tmp.sys.goals: stackset([])
+tis.private.tmp.sys.plan: Stack([])
+tis.private.tmp.sys.qud: stackset([])
+tis.private.tmp.usr.agenda: OpenQueue([#])
+tis.private.tmp.usr.bel: {}
+tis.private.tmp.usr.com: {}
+tis.private.tmp.usr.goals: stackset([])
+tis.private.tmp.usr.plan: Stack([])
+tis.private.tmp.usr.qud: stackset([])
+tis.program_state: RUN
+tis.recent_commitments: {}
+tis.recognized_utterance: None
+tis.repeat_questions: False
+tis.score: 0.0
+tis.shared.com: {}
+tis.shared.goals: stackset([perform(top)])
+tis.shared.lu.moves: {}
+tis.shared.lu.speaker: None
+tis.shared.lu.turn_cont: {}
+tis.shared.pm: {}
+tis.shared.previous_goal: None
+tis.shared.qud: stackset([])
+tis.sys_turns: 0
+tis.timeout.duration: None
+tis.timeout.enabled: False
+<-<-<-<-<-<-<-END->->->->->->>
+
+2017-10-20 15:25:23,738 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:filterReadings
+2017-10-20 15:25:23,738 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:selectHypothesis
+2017-10-20 15:25:23,739 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:getLatestMoves
+2017-10-20 15:25:23,741 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: getLatestMoves
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 15:25:23,741 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:switch_ddd
+2017-10-20 15:25:23,742 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:clearDeviceOutput
+2017-10-20 15:25:23,743 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: clearDeviceOutput
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 15:25:23,743 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:integrateDeviceAction
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:backupSharedUsr
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:noFollowupToActionConf
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:irrelevantFollowup
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:noFollowupToUndQ
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:downdateClarification
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - INFO - BEGIN integrate_moves
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - INFO - init_shift: OpenQueue([#])
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - INFO - BEGIN try_move_integratation_without_accommodation
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - INFO - init_shift: OpenQueue([#])
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:integrate
+2017-10-20 15:25:23,744 - session_2017-10-20T15_25_23_0 - INFO - breaking out: nim fully shifted: OpenQueue([#])
+2017-10-20 15:25:23,745 - session_2017-10-20T15_25_23_0 - INFO - END try_move_integratation_without_accommodation
+2017-10-20 15:25:23,745 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:removeYesNo
+2017-10-20 15:25:23,745 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_action
+2017-10-20 15:25:23,745 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_reject
+2017-10-20 15:25:23,745 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:accommodate
+2017-10-20 15:25:23,745 - session_2017-10-20T15_25_23_0 - INFO - breaking out of accommodate
+2017-10-20 15:25:23,745 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_reject
+2017-10-20 15:25:23,745 - session_2017-10-20T15_25_23_0 - INFO - END integrate_moves
+2017-10-20 15:25:23,745 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 15:25:23,746 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:load_plan
+2017-10-20 15:25:23,748 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: findActionPlan
+-- BEGIN TIS changes --
+- tis.private.agenda: OpenQueue([#])
++ tis.private.agenda: OpenQueue([#, emit_icm(ICMMove(icm:loadplan))])
+- tis.private.plan: Stack([do(top)])
++ tis.private.plan: Stack([forget_all, findout(?X.goal(X))])
+-- END TIS changes --
+2017-10-20 15:25:23,748 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 15:25:23,750 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: exec_forget_all
+-- BEGIN TIS changes --
+- tis.private.plan: Stack([forget_all, findout(?X.goal(X))])
+?                           ------------
++ tis.private.plan: Stack([findout(?X.goal(X))])
+-- END TIS changes --
+2017-10-20 15:25:23,750 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:load_plan
+2017-10-20 15:25:23,750 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 15:25:23,751 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:load_plan
+2017-10-20 15:25:23,751 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:downdate_qud
+2017-10-20 15:25:23,751 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:downdate_goals
+2017-10-20 15:25:23,751 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 15:25:23,752 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:load_plan
+2017-10-20 15:25:23,752 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:removeYesNo
+2017-10-20 15:25:23,752 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:enable_timeout
+2017-10-20 15:25:23,752 - session_2017-10-20T15_25_23_0 - DEBUG - DmeModule posts Event(FACTS, [], sender=DmeModule, reason=None)
+2017-10-20 15:25:23,752 - session_2017-10-20T15_25_23_0 - INFO - running ISU module: select
+2017-10-20 15:25:23,753 - session_2017-10-20T15_25_23_0 - DEBUG - <-<-<-<-<-<-<-IS->->->->->->>
+TIS:
+tis._ddd_manager: <tdm.ddd_manager.DddManager object at 0x7fca261e1e50>
+tis._logged_tis_format: diff
+tis._semantic_logic: <tdm.lib.semantic_logic.SemanticLogic object at 0x7fca259a7350>
+tis.active_ddd: Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})
+tis.cogload_level: LOW
+tis.cogload_management: False
+tis.cogload_strategy: None
+tis.conf_prediction_threshold.acknowledge: 0.8
+tis.conf_prediction_threshold.check: 0.6
+tis.conf_prediction_threshold.normal.acknowledge: 0.9
+tis.conf_prediction_threshold.normal.check: 0.6
+tis.conf_prediction_threshold.normal.trust: 1.01
+tis.conf_prediction_threshold.trust: 1.0
+tis.confidence_profiles.normal.acknowledge: 0.15
+tis.confidence_profiles.normal.check: 0.1
+tis.confidence_profiles.normal.trust: 0.3
+tis.confidence_profiles.relaxed.acknowledge: 0.35
+tis.confidence_profiles.relaxed.check: 0.4
+tis.confidence_profiles.relaxed.trust: 0.4
+tis.confidence_profiles.strict.acknowledge: 0.7
+tis.confidence_profiles.strict.check: 0.4
+tis.confidence_profiles.strict.trust: 0.8
+tis.current_time: 1508505923.74
+tis.ddds: [Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})]
+tis.device_manager: Device Manager: ['RecipehelpDevice']
+tis.device_outputs: Stack([])
+tis.high_cogload_onset_time: None
+tis.input_event: Event(START, None, sender=Frontend, reason=None)
+tis.language_code: eng
+tis.latest_moves: OpenQueue([#])
+tis.latest_moves_amb: {}
+tis.latest_speaker: None
+tis.logged_tis_format: diff
+tis.next_utterance.alts: []
+tis.next_utterance.context: {}
+tis.next_utterance.default_value: None
+tis.next_utterance.moves: OpenQueue([#])
+tis.next_utterance.plan_item: None
+tis.passive_mode: False
+tis.private.agenda: OpenQueue([#, emit_icm(ICMMove(icm:loadplan))])
+tis.private.bel: {}
+tis.private.issues_being_accommodated: {}
+tis.private.nim: OpenQueue([#])
+tis.private.plan: Stack([findout(?X.goal(X))])
+tis.private.tmp.sys.agenda: OpenQueue([#])
+tis.private.tmp.sys.bel: {}
+tis.private.tmp.sys.com: {}
+tis.private.tmp.sys.goals: stackset([])
+tis.private.tmp.sys.plan: Stack([])
+tis.private.tmp.sys.qud: stackset([])
+tis.private.tmp.usr.agenda: OpenQueue([#])
+tis.private.tmp.usr.bel: {}
+tis.private.tmp.usr.com: {}
+tis.private.tmp.usr.goals: stackset([])
+tis.private.tmp.usr.plan: Stack([])
+tis.private.tmp.usr.qud: stackset([])
+tis.program_state: RUN
+tis.recent_commitments: {}
+tis.recognized_utterance: None
+tis.repeat_questions: False
+tis.score: 0.0
+tis.shared.com: {}
+tis.shared.goals: stackset([perform(top)])
+tis.shared.lu.moves: {}
+tis.shared.lu.speaker: None
+tis.shared.lu.turn_cont: {}
+tis.shared.pm: {}
+tis.shared.previous_goal: None
+tis.shared.qud: stackset([])
+tis.sys_turns: 0
+tis.timeout.duration: None
+tis.timeout.enabled: False
+<-<-<-<-<-<-<-END->->->->->->>
+
+2017-10-20 15:25:23,753 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:backupSharedSys
+2017-10-20 15:25:23,756 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: backupSharedSys
+-- BEGIN TIS changes --
+- tis.private.tmp.sys.agenda: OpenQueue([#])
++ tis.private.tmp.sys.agenda: OpenQueue([#, emit_icm(ICMMove(icm:loadplan))])
+- tis.private.tmp.sys.goals: stackset([])
++ tis.private.tmp.sys.goals: stackset([perform(top)])
+?                                      ++++++++++++
+- tis.private.tmp.sys.plan: Stack([])
++ tis.private.tmp.sys.plan: Stack([findout(?X.goal(X))])
+?                                  +++++++++++++++++++
+-- END TIS changes --
+2017-10-20 15:25:23,757 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_action
+2017-10-20 15:25:23,759 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: selectFromPlan
+-- BEGIN TIS changes --
+- tis.private.agenda: OpenQueue([#, emit_icm(ICMMove(icm:loadplan))])
++ tis.private.agenda: OpenQueue([#, emit_icm(ICMMove(icm:loadplan)), findout(?X.goal(X))])
+?                                                                  +++++++++++++++++++++
+-- END TIS changes --
+2017-10-20 15:25:23,759 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_icm
+2017-10-20 15:25:23,761 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: selectIcmOther
+-- BEGIN TIS changes --
+- tis.next_utterance.moves: OpenQueue([#])
++ tis.next_utterance.moves: OpenQueue([#, ICMMove(icm:loadplan)])
+?                                       +++++++++++++++++++++++
+- tis.private.agenda: OpenQueue([#, emit_icm(ICMMove(icm:loadplan)), findout(?X.goal(X))])
+?                                   ---------------------------------
++ tis.private.agenda: OpenQueue([#, findout(?X.goal(X))])
+-- END TIS changes --
+2017-10-20 15:25:23,761 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_move
+2017-10-20 15:25:23,764 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: selectAsk
+-- BEGIN TIS changes --
+- tis.next_utterance.moves: OpenQueue([#, ICMMove(icm:loadplan)])
++ tis.next_utterance.moves: OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)))])
+?                                                              +++++++++++++++++++++++
+- tis.private.agenda: OpenQueue([#, findout(?X.goal(X))])
+?                                 ---------------------
++ tis.private.agenda: OpenQueue([#])
+-- END TIS changes --
+2017-10-20 15:25:23,764 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_icm
+2017-10-20 15:25:23,764 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_move
+2017-10-20 15:25:23,764 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:clearContext
+2017-10-20 15:25:23,766 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: clearContext
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 15:25:23,766 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:setGUIContext
+2017-10-20 15:25:23,766 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:set_timeout
+2017-10-20 15:25:23,769 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: setLongTimeout
+-- BEGIN TIS changes --
+- tis.timeout.duration: None
+?                       ^^^^
++ tis.timeout.duration: 5.0
+?                       ^^^
+-- END TIS changes --
+2017-10-20 15:25:23,769 - session_2017-10-20T15_25_23_0 - INFO - DmeModule posts SYSTEM_MOVES_SELECTED with moves=OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)), ddd_name=u'recipehelp')])
+2017-10-20 15:25:23,769 - session_2017-10-20T15_25_23_0 - DEBUG - DmeModule posts Event(SYSTEM_MOVES_SELECTED, {cogload_level: LOW, current_goal: perform(top), device_outputs: Stack([]), top_perform_goal: perform(top), moves: OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)), ddd_name=u'recipehelp')]), bel: {}, facts_being_grounded: [], current_plan: Stack([findout(?X.goal(X))]), next_utterance: NextUtterance(moves=OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)))]), context={}, alts=[], plan_item=None, default_value=None), previous_goal: None, com: {}, cogload_strategy: None}, sender=DmeModule, reason=Event(START, None, sender=Frontend, reason=None))
+2017-10-20 15:25:23,769 - session_2017-10-20T15_25_23_0 - DEBUG - DeviceManager handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 15:25:23,769 - session_2017-10-20T15_25_23_0 - DEBUG - GenerateModule handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 15:25:23,769 - session_2017-10-20T15_25_23_0 - DEBUG - IndependentGuiBackend handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 15:25:23,770 - session_2017-10-20T15_25_23_0 - DEBUG - GuiBackend handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 15:25:23,770 - session_2017-10-20T15_25_23_0 - DEBUG - CogloadModule handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 15:25:23,770 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None))
+2017-10-20 15:25:23,770 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None)
+2017-10-20 15:25:23,770 - session_2017-10-20T15_25_23_0 - DEBUG - IndependentGuiBackend handles Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None)
+2017-10-20 15:25:23,770 - session_2017-10-20T15_25_23_0 - DEBUG - GuiBackend handles Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None)
+2017-10-20 15:25:23,770 - session_2017-10-20T15_25_23_0 - DEBUG - Backend communication: Backend is sending event {"content": {"ddd_name": "recipehelp", "language_code": "eng"}, "_sender": "DmeModule", "_reason": null, "event_type": "SET_DDD"}
+2017-10-20 15:25:23,771 - session_2017-10-20T15_25_23_0 - DEBUG - Sent.
+2017-10-20 15:25:23,772 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(FACTS, [], sender=DmeModule, reason=None))
+2017-10-20 15:25:23,772 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(FACTS, [], sender=DmeModule, reason=None)
+2017-10-20 15:25:23,772 - session_2017-10-20T15_25_23_0 - DEBUG - Backend communication: Backend is sending event {"content": [], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-20 15:25:23,772 - session_2017-10-20T15_25_23_0 - DEBUG - Sent.
+2017-10-20 15:25:23,773 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(SYSTEM_MOVES_SELECTED, {cogload_level: LOW, current_goal: perform(top), device_outputs: Stack([]), top_perform_goal: perform(top), moves: OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)), ddd_name=u'recipehelp')]), bel: {}, facts_being_grounded: [], current_plan: Stack([findout(?X.goal(X))]), next_utterance: NextUtterance(moves=OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)))]), context={}, alts=[], plan_item=None, default_value=None), previous_goal: None, com: {}, cogload_strategy: None}, sender=DmeModule, reason=Event(START, None, sender=Frontend, reason=None)))
+2017-10-20 15:25:23,773 - session_2017-10-20T15_25_23_0 - DEBUG - TurnManager handles Event(SYSTEM_MOVES_SELECTED, {cogload_level: LOW, current_goal: perform(top), device_outputs: Stack([]), top_perform_goal: perform(top), moves: OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)), ddd_name=u'recipehelp')]), bel: {}, facts_being_grounded: [], current_plan: Stack([findout(?X.goal(X))]), next_utterance: NextUtterance(moves=OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)))]), context={}, alts=[], plan_item=None, default_value=None), previous_goal: None, com: {}, cogload_strategy: None}, sender=DmeModule, reason=Event(START, None, sender=Frontend, reason=None))
+2017-10-20 15:25:23,773 - session_2017-10-20T15_25_23_0 - INFO - TurnManager.enter_state(SYSTEM_TURN, echoing System moves selected) (previous state was IDLE)
+2017-10-20 15:25:23,773 - session_2017-10-20T15_25_23_0 - DEBUG - TurnManager posts Event(SYSTEM_MOVES_SELECTED, {cogload_level: LOW, current_goal: perform(top), device_outputs: Stack([]), top_perform_goal: perform(top), moves: OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)), ddd_name=u'recipehelp')]), bel: {}, facts_being_grounded: [], current_plan: Stack([findout(?X.goal(X))]), next_utterance: NextUtterance(moves=OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)))]), context={}, alts=[], plan_item=None, default_value=None), previous_goal: None, com: {}, cogload_strategy: None}, sender=TurnManager, reason=None)
+2017-10-20 15:25:23,773 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(SYSTEM_MOVES_SELECTED, {cogload_level: LOW, current_goal: perform(top), device_outputs: Stack([]), top_perform_goal: perform(top), moves: OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)), ddd_name=u'recipehelp')]), bel: {}, facts_being_grounded: [], current_plan: Stack([findout(?X.goal(X))]), next_utterance: NextUtterance(moves=OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)))]), context={}, alts=[], plan_item=None, default_value=None), previous_goal: None, com: {}, cogload_strategy: None}, sender=TurnManager, reason=None)
+2017-10-20 15:25:23,774 - session_2017-10-20T15_25_23_0 - DEBUG - GenerateModule handles Event(SYSTEM_MOVES_SELECTED, {current_plan: Stack([findout(?X.goal(X))]), bel: {}, cogload_level: LOW, facts_being_grounded: [], top_perform_goal: perform(top), device_outputs: Stack([]), next_utterance: NextUtterance(moves=OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)))]), context={}, alts=[], plan_item=None, default_value=None), previous_goal: None, current_goal: perform(top), moves: OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)), ddd_name=u'recipehelp')]), com: {}, cogload_strategy: None}, sender=TurnManager, reason=None)
+2017-10-20 15:25:23,774 - session_2017-10-20T15_25_23_0 - DEBUG - OutputPlanner._plan_move(move=ICMMove(icm:loadplan), facts={})
+2017-10-20 15:25:23,774 - session_2017-10-20T15_25_23_0 - DEBUG - OutputPlanner._plan_move finished, result is ICMMove(icm:loadplan)
+2017-10-20 15:25:23,774 - session_2017-10-20T15_25_23_0 - DEBUG - OutputPlanner._plan_move(move=Move(ask(?X.goal(X)), ddd_name=u'recipehelp'), facts={})
+2017-10-20 15:25:23,775 - session_2017-10-20T15_25_23_0 - DEBUG - OutputPlanner._plan_move finished, result is Move(ask(?X.goal(X)), ddd_name=u'recipehelp')
+2017-10-20 15:25:23,775 - session_2017-10-20T15_25_23_0 - DEBUG - GenerateModule: Generating utterance part from move ICMMove(icm:loadplan)
+2017-10-20 15:25:23,775 - session_2017-10-20T15_25_23_0 - DEBUG - GenerateModule: Move ICMMove(icm:loadplan) generated as ''
+2017-10-20 15:25:23,775 - session_2017-10-20T15_25_23_0 - DEBUG - GenerateModule: Generating utterance part from move Move(ask(?X.goal(X)), ddd_name=u'recipehelp')
+2017-10-20 15:25:23,776 - session_2017-10-20T15_25_23_0 - DEBUG - GenerateModule: Move Move(ask(?X.goal(X)), ddd_name=u'recipehelp') generated as u'What would you like to do?'
+2017-10-20 15:25:23,776 - session_2017-10-20T15_25_23_0 - DEBUG - GenerateModule posts Event(SYSTEM_UTTERANCE_TO_SPEAK, [, What would you like to do?], sender=GenerateModule, reason=None)
+2017-10-20 15:25:23,777 - session_2017-10-20T15_25_23_0 - DEBUG - IndependentGuiBackend handles Event(SYSTEM_MOVES_SELECTED, {current_plan: Stack([findout(?X.goal(X))]), bel: {}, cogload_level: LOW, facts_being_grounded: [], top_perform_goal: perform(top), device_outputs: Stack([]), next_utterance: NextUtterance(moves=OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)))]), context={}, alts=[], plan_item=None, default_value=None), previous_goal: None, current_goal: perform(top), moves: OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)), ddd_name=u'recipehelp')]), com: {}, cogload_strategy: None}, sender=TurnManager, reason=None)
+2017-10-20 15:25:23,778 - session_2017-10-20T15_25_23_0 - DEBUG - GuiBackend handles Event(SYSTEM_MOVES_SELECTED, {current_plan: Stack([findout(?X.goal(X))]), bel: {}, cogload_level: LOW, facts_being_grounded: [], top_perform_goal: perform(top), device_outputs: Stack([]), next_utterance: NextUtterance(moves=OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)))]), context={}, alts=[], plan_item=None, default_value=None), previous_goal: None, current_goal: perform(top), moves: OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)), ddd_name=u'recipehelp')]), com: {}, cogload_strategy: None}, sender=TurnManager, reason=None)
+2017-10-20 15:25:23,778 - session_2017-10-20T15_25_23_0 - DEBUG - GuiBackend triggered by SYSTEM_MOVES_SELECTED
+2017-10-20 15:25:23,778 - session_2017-10-20T15_25_23_0 - DEBUG - GuiBackend triggered by moves OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)), ddd_name=u'recipehelp')])
+2017-10-20 15:25:23,778 - session_2017-10-20T15_25_23_0 - DEBUG - OutputPlanner._plan_move(move=ICMMove(icm:loadplan), facts={})
+2017-10-20 15:25:23,778 - session_2017-10-20T15_25_23_0 - DEBUG - OutputPlanner._plan_move finished, result is ICMMove(icm:loadplan)
+2017-10-20 15:25:23,779 - session_2017-10-20T15_25_23_0 - DEBUG - OutputPlanner._plan_move(move=Move(ask(?X.goal(X)), ddd_name=u'recipehelp'), facts={})
+2017-10-20 15:25:23,779 - session_2017-10-20T15_25_23_0 - DEBUG - OutputPlanner._plan_move finished, result is Move(ask(?X.goal(X)), ddd_name=u'recipehelp')
+2017-10-20 15:25:23,779 - session_2017-10-20T15_25_23_0 - DEBUG - GuiBackend generated message []
+2017-10-20 15:25:23,779 - session_2017-10-20T15_25_23_0 - DEBUG - GuiBackend posts Event(MESSAGE_TO_GUI, [], sender=GuiBackend, reason=None)
+2017-10-20 15:25:23,779 - session_2017-10-20T15_25_23_0 - DEBUG - GuiBackend posted event
+2017-10-20 15:25:23,779 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(SYSTEM_UTTERANCE_TO_SPEAK, [, What would you like to do?], sender=GenerateModule, reason=None))
+2017-10-20 15:25:23,780 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(SYSTEM_UTTERANCE_TO_SPEAK, [, What would you like to do?], sender=GenerateModule, reason=None)
+2017-10-20 15:25:23,780 - session_2017-10-20T15_25_23_0 - DEBUG - Backend communication: Backend is sending event {"content": ["", "What would you like to do?"], "_sender": "GenerateModule", "_reason": null, "event_type": "SYSTEM_UTTERANCE_TO_SPEAK"}
+2017-10-20 15:25:23,780 - session_2017-10-20T15_25_23_0 - DEBUG - Sent.
+2017-10-20 15:25:23,780 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(MESSAGE_TO_GUI, [], sender=GuiBackend, reason=None))
+2017-10-20 15:25:23,780 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(MESSAGE_TO_GUI, [], sender=GuiBackend, reason=None)
+2017-10-20 15:25:23,780 - session_2017-10-20T15_25_23_0 - DEBUG - Backend communication: Backend is sending event {"content": [], "_sender": "GuiBackend", "_reason": null, "event_type": "MESSAGE_TO_GUI"}
+2017-10-20 15:25:23,781 - session_2017-10-20T15_25_23_0 - DEBUG - Sent.
+2017-10-20 15:25:23,781 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.handle_event_from_external_queue()
+2017-10-20 15:25:23,823 - session_2017-10-20T15_25_23_0 - DEBUG - Backend communication: Backend received event {"content": ["", "What would you like to do?"], "_sender": "TextOutputComponent", "_reason": null, "event_type": "SYSTEM_UTTERANCE_REALIZED"}
+2017-10-20 15:25:23,824 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_external_event(...)
+2017-10-20 15:25:23,824 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(SYSTEM_UTTERANCE_REALIZED, [, What would you like to do?], sender=TextOutputComponent, reason=None))
+2017-10-20 15:25:23,824 - session_2017-10-20T15_25_23_0 - DEBUG - TurnManager handles Event(SYSTEM_UTTERANCE_REALIZED, [, What would you like to do?], sender=TextOutputComponent, reason=None)
+2017-10-20 15:25:23,824 - session_2017-10-20T15_25_23_0 - INFO - TurnManager.enter_state(IDLE, SYS done speaking) (previous state was SYSTEM_TURN)
+2017-10-20 15:25:23,824 - session_2017-10-20T15_25_23_0 - DEBUG - TurnManager posts Event(SYSTEM_MOVES, [, What would you like to do?], sender=TurnManager, reason=None)
+2017-10-20 15:25:23,824 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(SYSTEM_MOVES, [, What would you like to do?], sender=TurnManager, reason=None)
+2017-10-20 15:25:23,824 - session_2017-10-20T15_25_23_0 - DEBUG - DmeModule handles Event(SYSTEM_MOVES, [, What would you like to do?], sender=TurnManager, reason=None)
+2017-10-20 15:25:23,825 - session_2017-10-20T15_25_23_0 - INFO - running ISU module: update (Event(SYSTEM_MOVES, [, What would you like to do?], sender=TurnManager, reason=None))
+2017-10-20 15:25:23,825 - session_2017-10-20T15_25_23_0 - DEBUG - <-<-<-<-<-<-<-IS->->->->->->>
+TIS:
+tis._ddd_manager: <tdm.ddd_manager.DddManager object at 0x7fca261e1e50>
+tis._logged_tis_format: diff
+tis._semantic_logic: <tdm.lib.semantic_logic.SemanticLogic object at 0x7fca259a7350>
+tis.active_ddd: Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})
+tis.cogload_level: LOW
+tis.cogload_management: False
+tis.cogload_strategy: None
+tis.conf_prediction_threshold.acknowledge: 0.8
+tis.conf_prediction_threshold.check: 0.6
+tis.conf_prediction_threshold.normal.acknowledge: 0.9
+tis.conf_prediction_threshold.normal.check: 0.6
+tis.conf_prediction_threshold.normal.trust: 1.01
+tis.conf_prediction_threshold.trust: 1.0
+tis.confidence_profiles.normal.acknowledge: 0.15
+tis.confidence_profiles.normal.check: 0.1
+tis.confidence_profiles.normal.trust: 0.3
+tis.confidence_profiles.relaxed.acknowledge: 0.35
+tis.confidence_profiles.relaxed.check: 0.4
+tis.confidence_profiles.relaxed.trust: 0.4
+tis.confidence_profiles.strict.acknowledge: 0.7
+tis.confidence_profiles.strict.check: 0.4
+tis.confidence_profiles.strict.trust: 0.8
+tis.current_time: 1508505923.83
+tis.ddds: [Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})]
+tis.device_manager: Device Manager: ['RecipehelpDevice']
+tis.device_outputs: Stack([])
+tis.high_cogload_onset_time: None
+tis.input_event: Event(SYSTEM_MOVES, [, What would you like to do?], sender=TurnManager, reason=None)
+tis.language_code: eng
+tis.latest_moves: OpenQueue([#, ICMMove(icm:loadplan, speaker=SYS, score=1.0), Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])
+tis.latest_moves_amb: {}
+tis.latest_speaker: SYS
+tis.logged_tis_format: diff
+tis.next_utterance.alts: []
+tis.next_utterance.context: {}
+tis.next_utterance.default_value: None
+tis.next_utterance.moves: OpenQueue([#, ICMMove(icm:loadplan), Move(ask(?X.goal(X)))])
+tis.next_utterance.plan_item: None
+tis.passive_mode: False
+tis.private.agenda: OpenQueue([#])
+tis.private.bel: {}
+tis.private.issues_being_accommodated: {}
+tis.private.nim: OpenQueue([#])
+tis.private.plan: Stack([findout(?X.goal(X))])
+tis.private.tmp.sys.agenda: OpenQueue([#, emit_icm(ICMMove(icm:loadplan))])
+tis.private.tmp.sys.bel: {}
+tis.private.tmp.sys.com: {}
+tis.private.tmp.sys.goals: stackset([perform(top)])
+tis.private.tmp.sys.plan: Stack([findout(?X.goal(X))])
+tis.private.tmp.sys.qud: stackset([])
+tis.private.tmp.usr.agenda: OpenQueue([#])
+tis.private.tmp.usr.bel: {}
+tis.private.tmp.usr.com: {}
+tis.private.tmp.usr.goals: stackset([])
+tis.private.tmp.usr.plan: Stack([])
+tis.private.tmp.usr.qud: stackset([])
+tis.program_state: RUN
+tis.recent_commitments: {}
+tis.recognized_utterance: None
+tis.repeat_questions: False
+tis.score: 0.0
+tis.shared.com: {}
+tis.shared.goals: stackset([perform(top)])
+tis.shared.lu.moves: {}
+tis.shared.lu.speaker: None
+tis.shared.lu.turn_cont: {}
+tis.shared.pm: {}
+tis.shared.previous_goal: None
+tis.shared.qud: stackset([])
+tis.sys_turns: 0
+tis.timeout.duration: 5.0
+tis.timeout.enabled: False
+<-<-<-<-<-<-<-END->->->->->->>
+
+2017-10-20 15:25:23,826 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:filterReadings
+2017-10-20 15:25:23,826 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:selectHypothesis
+2017-10-20 15:25:23,826 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:getLatestMoves
+2017-10-20 15:25:23,829 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: getLatestMoves
+-- BEGIN TIS changes --
+- tis.private.nim: OpenQueue([#])
++ tis.private.nim: OpenQueue([ICMMove(icm:loadplan, speaker=SYS, score=1.0), Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech), #])
+- tis.shared.lu.speaker: None
+?                        ^^^^
++ tis.shared.lu.speaker: SYS
+?                        ^^^
+-- END TIS changes --
+2017-10-20 15:25:23,829 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:switch_ddd
+2017-10-20 15:25:23,829 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:clearDeviceOutput
+2017-10-20 15:25:23,831 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: clearDeviceOutput
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 15:25:23,831 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:integrateDeviceAction
+2017-10-20 15:25:23,831 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:backupSharedUsr
+2017-10-20 15:25:23,831 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:noFollowupToActionConf
+2017-10-20 15:25:23,831 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:irrelevantFollowup
+2017-10-20 15:25:23,832 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:noFollowupToUndQ
+2017-10-20 15:25:23,832 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:downdateClarification
+2017-10-20 15:25:23,832 - session_2017-10-20T15_25_23_0 - INFO - BEGIN integrate_moves
+2017-10-20 15:25:23,832 - session_2017-10-20T15_25_23_0 - INFO - init_shift: OpenQueue([ICMMove(icm:loadplan, speaker=SYS, score=1.0), Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech), #])
+2017-10-20 15:25:23,832 - session_2017-10-20T15_25_23_0 - INFO - BEGIN try_move_integratation_without_accommodation
+2017-10-20 15:25:23,832 - session_2017-10-20T15_25_23_0 - INFO - init_shift: OpenQueue([ICMMove(icm:loadplan, speaker=SYS, score=1.0), Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech), #])
+2017-10-20 15:25:23,832 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:integrate
+2017-10-20 15:25:23,836 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: integrateOtherICM
+-- BEGIN TIS changes --
+- tis.private.nim: OpenQueue([ICMMove(icm:loadplan, speaker=SYS, score=1.0), Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech), #])
+?                             -----------------------------------------------
++ tis.private.nim: OpenQueue([Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech), #])
+- tis.shared.lu.turn_cont: {}
++ tis.shared.lu.turn_cont: {ICMMove(icm:loadplan, speaker=SYS, score=1.0)}
+-- END TIS changes --
+2017-10-20 15:25:23,836 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:integrateSysAnswer
+2017-10-20 15:25:23,836 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:downdate_goals
+2017-10-20 15:25:23,837 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:removeFindout
+2017-10-20 15:25:23,837 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:load_plan
+2017-10-20 15:25:23,837 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:integrate
+2017-10-20 15:25:23,839 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: integrateSysAsk
+-- BEGIN TIS changes --
+- tis.private.nim: OpenQueue([Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech), #])
++ tis.private.nim: OpenQueue([#])
+- tis.shared.goals: stackset([perform(top)])
++ tis.shared.goals: stackset([resolve_user(?X.goal(X)), perform(top)])
+?                             ++++++++++++++++++++++++++
+- tis.shared.lu.turn_cont: {ICMMove(icm:loadplan, speaker=SYS, score=1.0)}
++ tis.shared.lu.turn_cont: {ICMMove(icm:loadplan, speaker=SYS, score=1.0), Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)}
+- tis.shared.qud: stackset([])
++ tis.shared.qud: stackset([?X.goal(X)])
+?                           ++++++++++
+-- END TIS changes --
+2017-10-20 15:25:23,840 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:integrateSysAnswer
+2017-10-20 15:25:23,840 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:downdate_goals
+2017-10-20 15:25:23,840 - session_2017-10-20T15_25_23_0 - DEBUG - Testing preconds for rule:removeFindout
+2017-10-20 15:25:23,840 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:load_plan
+2017-10-20 15:25:23,840 - session_2017-10-20T15_25_23_0 - INFO - breaking out: nim fully shifted: OpenQueue([#])
+2017-10-20 15:25:23,840 - session_2017-10-20T15_25_23_0 - INFO - END try_move_integratation_without_accommodation
+2017-10-20 15:25:23,840 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:removeYesNo
+2017-10-20 15:25:23,840 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_action
+2017-10-20 15:25:23,840 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_reject
+2017-10-20 15:25:23,841 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:accommodate
+2017-10-20 15:25:23,841 - session_2017-10-20T15_25_23_0 - INFO - breaking out of accommodate
+2017-10-20 15:25:23,841 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:select_reject
+2017-10-20 15:25:23,841 - session_2017-10-20T15_25_23_0 - INFO - END integrate_moves
+2017-10-20 15:25:23,841 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 15:25:23,841 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:load_plan
+2017-10-20 15:25:23,841 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:downdate_qud
+2017-10-20 15:25:23,841 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:downdate_goals
+2017-10-20 15:25:23,841 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 15:25:23,842 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:load_plan
+2017-10-20 15:25:23,842 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:removeYesNo
+2017-10-20 15:25:23,842 - session_2017-10-20T15_25_23_0 - DEBUG - rulegroup:enable_timeout
+2017-10-20 15:25:23,844 - session_2017-10-20T15_25_23_0 - DEBUG - Applied rule: disableTimeout
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 15:25:23,844 - session_2017-10-20T15_25_23_0 - DEBUG - DmeModule posts Event(FACTS, [], sender=DmeModule, reason=None)
+2017-10-20 15:25:23,844 - session_2017-10-20T15_25_23_0 - DEBUG - DmeModule posts Event(END_SYSTEM_TURN, ({utterance: [, What would you like to do?], latest_moves: OpenQueue([#, ICMMove(icm:loadplan, speaker=SYS, score=1.0), Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])}, None), sender=DmeModule, reason=None)
+2017-10-20 15:25:23,844 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(FACTS, [], sender=DmeModule, reason=None))
+2017-10-20 15:25:23,844 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(FACTS, [], sender=DmeModule, reason=None)
+2017-10-20 15:25:23,845 - session_2017-10-20T15_25_23_0 - DEBUG - Backend communication: Backend is sending event {"content": [], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-20 15:25:23,845 - session_2017-10-20T15_25_23_0 - DEBUG - Sent.
+2017-10-20 15:25:23,845 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(END_SYSTEM_TURN, ({utterance: [, What would you like to do?], latest_moves: OpenQueue([#, ICMMove(icm:loadplan, speaker=SYS, score=1.0), Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])}, None), sender=DmeModule, reason=None))
+2017-10-20 15:25:23,845 - session_2017-10-20T15_25_23_0 - DEBUG - TurnManager handles Event(END_SYSTEM_TURN, ({utterance: [, What would you like to do?], latest_moves: OpenQueue([#, ICMMove(icm:loadplan, speaker=SYS, score=1.0), Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])}, None), sender=DmeModule, reason=None)
+2017-10-20 15:25:23,846 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(END_SYSTEM_TURN, ({utterance: [, What would you like to do?], latest_moves: OpenQueue([#, ICMMove(icm:loadplan, speaker=SYS, score=1.0), Move(ask(?X.goal(X)), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])}, None), sender=DmeModule, reason=None)
+2017-10-20 15:25:23,846 - session_2017-10-20T15_25_23_0 - DEBUG - Backend.handle_event_from_external_queue()
+2017-10-20 15:26:08,477 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_external_event(...)
+2017-10-20 15:26:08,477 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(STOP, None, sender=Backend, reason=None))
+2017-10-20 15:26:08,477 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(STOP, None, sender=Backend, reason=None)
+2017-10-20 15:26:08,478 - session_2017-10-20T15_25_23_0 - DEBUG - InterpretModule handles Event(STOP, None, sender=Backend, reason=None)
+2017-10-20 15:26:08,478 - session_2017-10-20T15_25_23_0 - DEBUG - InterpretModule posts Event(STOPPED, None, sender=InterpretModule, reason=None)
+2017-10-20 15:26:08,478 - session_2017-10-20T15_25_23_0 - DEBUG - DmeModule handles Event(STOP, None, sender=Backend, reason=None)
+2017-10-20 15:26:08,478 - session_2017-10-20T15_25_23_0 - DEBUG - DmeModule posts Event(STOPPED, None, sender=DmeModule, reason=None)
+2017-10-20 15:26:08,478 - session_2017-10-20T15_25_23_0 - DEBUG - DeviceManager handles Event(STOP, None, sender=Backend, reason=None)
+2017-10-20 15:26:08,478 - session_2017-10-20T15_25_23_0 - DEBUG - DeviceManager posts Event(STOPPED, None, sender=DeviceManager, reason=None)
+2017-10-20 15:26:08,479 - session_2017-10-20T15_25_23_0 - DEBUG - GenerateModule handles Event(STOP, None, sender=Backend, reason=None)
+2017-10-20 15:26:08,479 - session_2017-10-20T15_25_23_0 - DEBUG - GenerateModule posts Event(STOPPED, None, sender=GenerateModule, reason=None)
+2017-10-20 15:26:08,479 - session_2017-10-20T15_25_23_0 - DEBUG - IndependentGuiBackend handles Event(STOP, None, sender=Backend, reason=None)
+2017-10-20 15:26:08,479 - session_2017-10-20T15_25_23_0 - DEBUG - IndependentGuiBackend posts Event(STOPPED, None, sender=IndependentGuiBackend, reason=None)
+2017-10-20 15:26:08,479 - session_2017-10-20T15_25_23_0 - DEBUG - GuiBackend handles Event(STOP, None, sender=Backend, reason=None)
+2017-10-20 15:26:08,479 - session_2017-10-20T15_25_23_0 - DEBUG - GuiBackend posts Event(STOPPED, None, sender=GuiBackend, reason=None)
+2017-10-20 15:26:08,479 - session_2017-10-20T15_25_23_0 - DEBUG - CogloadModule handles Event(STOP, None, sender=Backend, reason=None)
+2017-10-20 15:26:08,479 - session_2017-10-20T15_25_23_0 - DEBUG - CogloadModule posts Event(STOPPED, None, sender=CogloadModule, reason=None)
+2017-10-20 15:26:08,479 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(STOPPED, None, sender=InterpretModule, reason=None))
+2017-10-20 15:26:08,479 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(STOPPED, None, sender=InterpretModule, reason=None)
+2017-10-20 15:26:08,480 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(STOPPED, None, sender=DmeModule, reason=None))
+2017-10-20 15:26:08,480 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(STOPPED, None, sender=DmeModule, reason=None)
+2017-10-20 15:26:08,480 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(STOPPED, None, sender=DeviceManager, reason=None))
+2017-10-20 15:26:08,480 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(STOPPED, None, sender=DeviceManager, reason=None)
+2017-10-20 15:26:08,480 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(STOPPED, None, sender=GenerateModule, reason=None))
+2017-10-20 15:26:08,480 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(STOPPED, None, sender=GenerateModule, reason=None)
+2017-10-20 15:26:08,480 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(STOPPED, None, sender=IndependentGuiBackend, reason=None))
+2017-10-20 15:26:08,480 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(STOPPED, None, sender=IndependentGuiBackend, reason=None)
+2017-10-20 15:26:08,480 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(STOPPED, None, sender=GuiBackend, reason=None))
+2017-10-20 15:26:08,480 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(STOPPED, None, sender=GuiBackend, reason=None)
+2017-10-20 15:26:08,481 - session_2017-10-20T15_25_23_0 - DEBUG - Backend._handle_event(Event(STOPPED, None, sender=CogloadModule, reason=None))
+2017-10-20 15:26:08,481 - session_2017-10-20T15_25_23_0 - DEBUG - EventDispatcher: dispatching event Event(STOPPED, None, sender=CogloadModule, reason=None)

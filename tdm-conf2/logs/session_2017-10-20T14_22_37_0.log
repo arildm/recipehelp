@@ -1,0 +1,743 @@
+2017-10-20 14:22:37,427 - session_2017-10-20T14_22_37_0 - DEBUG - Backend()
+2017-10-20 14:22:37,427 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.initialize()
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.add_module(DmeModule, args=[<bound method Backend.get_tis of <tdm.backend.Backend object at 0x7fc94e385f10>>, False])
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.add_module(GenerateModule, args=[<bound method Backend.get_tis of <tdm.backend.Backend object at 0x7fc94e385f10>>, 'eng'])
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.add_module(DeviceManager, args=[])
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.add_module(CogloadModule, args=[])
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - INFO - TurnManager.enter_state(IDLE, __init__) (previous state was None)
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.add_module(GuiBackend, args=[<bound method Backend.get_tis of <tdm.backend.Backend object at 0x7fc94e385f10>>, True, 'disabled'])
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.add_module(IndependentGuiBackend, args=[<bound method Backend.get_tis of <tdm.backend.Backend object at 0x7fc94e385f10>>])
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.add_module(InterpretModule, args=[<bound method Backend.get_device_manager of <tdm.backend.Backend object at 0x7fc94e385f10>>, <bound method Backend.get_tis of <tdm.backend.Backend object at 0x7fc94e385f10>>, 'eng', False, True])
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - DEBUG - Backend initialized
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - DEBUG - Backend started in directory '/home/gusmatssar/recipedialogue/tdm'
+2017-10-20 14:22:37,457 - session_2017-10-20T14_22_37_0 - DEBUG - Backend uses TDM version '5.0.0'
+2017-10-20 14:22:37,458 - session_2017-10-20T14_22_37_0 - DEBUG - Backend uses backend config {u'active_ddd': u'recipehelp', u'ddds': [u'recipehelp'], u'asr': u'none', u'use_recognition_profile': False, u'use_word_list_correction': False, u'supported_languages': [u'eng'], u'repeat_questions': False}
+2017-10-20 14:22:37,458 - session_2017-10-20T14_22_37_0 - DEBUG - Backend uses language 'eng'
+2017-10-20 14:22:37,458 - session_2017-10-20T14_22_37_0 - DEBUG - running module InterpretModule
+2017-10-20 14:22:37,458 - session_2017-10-20T14_22_37_0 - DEBUG - running module DmeModule
+2017-10-20 14:22:37,459 - session_2017-10-20T14_22_37_0 - DEBUG - running module DeviceManager
+2017-10-20 14:22:37,459 - session_2017-10-20T14_22_37_0 - DEBUG - running module GenerateModule
+2017-10-20 14:22:37,460 - session_2017-10-20T14_22_37_0 - DEBUG - running module IndependentGuiBackend
+2017-10-20 14:22:37,460 - session_2017-10-20T14_22_37_0 - DEBUG - running module GuiBackend
+2017-10-20 14:22:37,460 - session_2017-10-20T14_22_37_0 - DEBUG - running module CogloadModule
+2017-10-20 14:22:37,461 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.handle_event_from_external_queue()
+2017-10-20 14:22:37,461 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_external_event(...)
+2017-10-20 14:22:37,461 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(REGISTER_BACKEND, None, sender=Backend, reason=None))
+2017-10-20 14:22:37,462 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(REGISTER_BACKEND, None, sender=Backend, reason=None)
+2017-10-20 14:22:37,462 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend is sending event {"content": null, "_sender": "Backend", "_reason": null, "event_type": "REGISTER_BACKEND"}
+2017-10-20 14:22:37,462 - session_2017-10-20T14_22_37_0 - DEBUG - Sent.
+2017-10-20 14:22:37,462 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.handle_event_from_external_queue()
+2017-10-20 14:22:37,495 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend received event {"content": null, "_sender": "Frontend", "_reason": null, "event_type": "FRONTEND_READY"}
+2017-10-20 14:22:37,495 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_external_event(...)
+2017-10-20 14:22:37,496 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(FRONTEND_READY, None, sender=Frontend, reason=None))
+2017-10-20 14:22:37,497 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(FRONTEND_READY, None, sender=Frontend, reason=None)
+2017-10-20 14:22:37,497 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(BACKEND_READY, None, sender=Backend, reason=None))
+2017-10-20 14:22:37,497 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(BACKEND_READY, None, sender=Backend, reason=None)
+2017-10-20 14:22:37,497 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend is sending event {"content": null, "_sender": "Backend", "_reason": null, "event_type": "BACKEND_READY"}
+2017-10-20 14:22:37,498 - session_2017-10-20T14_22_37_0 - DEBUG - Sent.
+2017-10-20 14:22:37,498 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.handle_event_from_external_queue()
+2017-10-20 14:22:37,500 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend received event {"content": null, "_sender": "Frontend", "_reason": null, "event_type": "START"}
+2017-10-20 14:22:37,501 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_external_event(...)
+2017-10-20 14:22:37,501 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(START, None, sender=Frontend, reason=None))
+2017-10-20 14:22:37,501 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(START, None, sender=Frontend, reason=None)
+2017-10-20 14:22:37,501 - session_2017-10-20T14_22_37_0 - DEBUG - InterpretModule handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 14:22:37,501 - session_2017-10-20T14_22_37_0 - DEBUG - DmeModule handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 14:22:37,501 - session_2017-10-20T14_22_37_0 - DEBUG - DmeModule posts Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None)
+2017-10-20 14:22:37,501 - session_2017-10-20T14_22_37_0 - INFO - running ISU module: update (Event(START, None, sender=Frontend, reason=None))
+2017-10-20 14:22:37,502 - session_2017-10-20T14_22_37_0 - DEBUG - <-<-<-<-<-<-<-IS->->->->->->>
+TIS:
+tis._ddd_manager: <tdm.ddd_manager.DddManager object at 0x7fc94db4f090>
+tis._logged_tis_format: diff
+tis._semantic_logic: <tdm.lib.semantic_logic.SemanticLogic object at 0x7fc94c096e90>
+tis.active_ddd: Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})
+tis.cogload_level: LOW
+tis.cogload_management: False
+tis.cogload_strategy: None
+tis.conf_prediction_threshold.acknowledge: 0.8
+tis.conf_prediction_threshold.check: 0.6
+tis.conf_prediction_threshold.normal.acknowledge: 0.9
+tis.conf_prediction_threshold.normal.check: 0.6
+tis.conf_prediction_threshold.normal.trust: 1.01
+tis.conf_prediction_threshold.trust: 1.0
+tis.confidence_profiles.normal.acknowledge: 0.15
+tis.confidence_profiles.normal.check: 0.1
+tis.confidence_profiles.normal.trust: 0.3
+tis.confidence_profiles.relaxed.acknowledge: 0.35
+tis.confidence_profiles.relaxed.check: 0.4
+tis.confidence_profiles.relaxed.trust: 0.4
+tis.confidence_profiles.strict.acknowledge: 0.7
+tis.confidence_profiles.strict.check: 0.4
+tis.confidence_profiles.strict.trust: 0.8
+tis.current_time: 1508502157.5
+tis.ddds: [Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})]
+tis.device_manager: Device Manager: ['RecipehelpDevice']
+tis.device_outputs: Stack([])
+tis.high_cogload_onset_time: None
+tis.input_event: Event(START, None, sender=Frontend, reason=None)
+tis.language_code: eng
+tis.latest_moves: OpenQueue([#])
+tis.latest_moves_amb: {}
+tis.latest_speaker: None
+tis.logged_tis_format: diff
+tis.next_utterance.alts: []
+tis.next_utterance.context: {}
+tis.next_utterance.default_value: None
+tis.next_utterance.moves: OpenQueue([#])
+tis.next_utterance.plan_item: None
+tis.passive_mode: False
+tis.private.agenda: OpenQueue([#])
+tis.private.bel: {}
+tis.private.issues_being_accommodated: {}
+tis.private.nim: OpenQueue([#])
+tis.private.plan: Stack([do(top)])
+tis.private.tmp.sys.agenda: OpenQueue([#])
+tis.private.tmp.sys.bel: {}
+tis.private.tmp.sys.com: {}
+tis.private.tmp.sys.goals: stackset([])
+tis.private.tmp.sys.plan: Stack([])
+tis.private.tmp.sys.qud: stackset([])
+tis.private.tmp.usr.agenda: OpenQueue([#])
+tis.private.tmp.usr.bel: {}
+tis.private.tmp.usr.com: {}
+tis.private.tmp.usr.goals: stackset([])
+tis.private.tmp.usr.plan: Stack([])
+tis.private.tmp.usr.qud: stackset([])
+tis.program_state: RUN
+tis.recent_commitments: {}
+tis.recognized_utterance: None
+tis.repeat_questions: False
+tis.score: 0.0
+tis.shared.com: {}
+tis.shared.goals: stackset([perform(top)])
+tis.shared.lu.moves: {}
+tis.shared.lu.speaker: None
+tis.shared.lu.turn_cont: {}
+tis.shared.pm: {}
+tis.shared.previous_goal: None
+tis.shared.qud: stackset([])
+tis.sys_turns: 0
+tis.timeout.duration: None
+tis.timeout.enabled: False
+<-<-<-<-<-<-<-END->->->->->->>
+
+2017-10-20 14:22:37,503 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:filterReadings
+2017-10-20 14:22:37,503 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:selectHypothesis
+2017-10-20 14:22:37,503 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:getLatestMoves
+2017-10-20 14:22:37,506 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: getLatestMoves
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 14:22:37,506 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:switch_ddd
+2017-10-20 14:22:37,506 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:clearDeviceOutput
+2017-10-20 14:22:37,508 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: clearDeviceOutput
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 14:22:37,508 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:integrateDeviceAction
+2017-10-20 14:22:37,508 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:backupSharedUsr
+2017-10-20 14:22:37,508 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:noFollowupToActionConf
+2017-10-20 14:22:37,508 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:irrelevantFollowup
+2017-10-20 14:22:37,508 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:noFollowupToUndQ
+2017-10-20 14:22:37,508 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:downdateClarification
+2017-10-20 14:22:37,508 - session_2017-10-20T14_22_37_0 - INFO - BEGIN integrate_moves
+2017-10-20 14:22:37,509 - session_2017-10-20T14_22_37_0 - INFO - init_shift: OpenQueue([#])
+2017-10-20 14:22:37,509 - session_2017-10-20T14_22_37_0 - INFO - BEGIN try_move_integratation_without_accommodation
+2017-10-20 14:22:37,509 - session_2017-10-20T14_22_37_0 - INFO - init_shift: OpenQueue([#])
+2017-10-20 14:22:37,509 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:integrate
+2017-10-20 14:22:37,509 - session_2017-10-20T14_22_37_0 - INFO - breaking out: nim fully shifted: OpenQueue([#])
+2017-10-20 14:22:37,509 - session_2017-10-20T14_22_37_0 - INFO - END try_move_integratation_without_accommodation
+2017-10-20 14:22:37,510 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:removeYesNo
+2017-10-20 14:22:37,510 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_action
+2017-10-20 14:22:37,510 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_reject
+2017-10-20 14:22:37,510 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:accommodate
+2017-10-20 14:22:37,510 - session_2017-10-20T14_22_37_0 - INFO - breaking out of accommodate
+2017-10-20 14:22:37,510 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_reject
+2017-10-20 14:22:37,510 - session_2017-10-20T14_22_37_0 - INFO - END integrate_moves
+2017-10-20 14:22:37,510 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 14:22:37,510 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:load_plan
+2017-10-20 14:22:37,513 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: findActionPlan
+-- BEGIN TIS changes --
+- tis.private.plan: Stack([do(top)])
++ tis.private.plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
+-- END TIS changes --
+2017-10-20 14:22:37,513 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 14:22:37,514 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:load_plan
+2017-10-20 14:22:37,514 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:downdate_qud
+2017-10-20 14:22:37,514 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:downdate_goals
+2017-10-20 14:22:37,514 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 14:22:37,514 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:load_plan
+2017-10-20 14:22:37,514 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:removeYesNo
+2017-10-20 14:22:37,514 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:enable_timeout
+2017-10-20 14:22:37,515 - session_2017-10-20T14_22_37_0 - DEBUG - DmeModule posts Event(FACTS, [], sender=DmeModule, reason=None)
+2017-10-20 14:22:37,515 - session_2017-10-20T14_22_37_0 - INFO - running ISU module: select
+2017-10-20 14:22:37,515 - session_2017-10-20T14_22_37_0 - DEBUG - <-<-<-<-<-<-<-IS->->->->->->>
+TIS:
+tis._ddd_manager: <tdm.ddd_manager.DddManager object at 0x7fc94db4f090>
+tis._logged_tis_format: diff
+tis._semantic_logic: <tdm.lib.semantic_logic.SemanticLogic object at 0x7fc94c096e90>
+tis.active_ddd: Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})
+tis.cogload_level: LOW
+tis.cogload_management: False
+tis.cogload_strategy: None
+tis.conf_prediction_threshold.acknowledge: 0.8
+tis.conf_prediction_threshold.check: 0.6
+tis.conf_prediction_threshold.normal.acknowledge: 0.9
+tis.conf_prediction_threshold.normal.check: 0.6
+tis.conf_prediction_threshold.normal.trust: 1.01
+tis.conf_prediction_threshold.trust: 1.0
+tis.confidence_profiles.normal.acknowledge: 0.15
+tis.confidence_profiles.normal.check: 0.1
+tis.confidence_profiles.normal.trust: 0.3
+tis.confidence_profiles.relaxed.acknowledge: 0.35
+tis.confidence_profiles.relaxed.check: 0.4
+tis.confidence_profiles.relaxed.trust: 0.4
+tis.confidence_profiles.strict.acknowledge: 0.7
+tis.confidence_profiles.strict.check: 0.4
+tis.confidence_profiles.strict.trust: 0.8
+tis.current_time: 1508502157.5
+tis.ddds: [Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})]
+tis.device_manager: Device Manager: ['RecipehelpDevice']
+tis.device_outputs: Stack([])
+tis.high_cogload_onset_time: None
+tis.input_event: Event(START, None, sender=Frontend, reason=None)
+tis.language_code: eng
+tis.latest_moves: OpenQueue([#])
+tis.latest_moves_amb: {}
+tis.latest_speaker: None
+tis.logged_tis_format: diff
+tis.next_utterance.alts: []
+tis.next_utterance.context: {}
+tis.next_utterance.default_value: None
+tis.next_utterance.moves: OpenQueue([#])
+tis.next_utterance.plan_item: None
+tis.passive_mode: False
+tis.private.agenda: OpenQueue([#])
+tis.private.bel: {}
+tis.private.issues_being_accommodated: {}
+tis.private.nim: OpenQueue([#])
+tis.private.plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
+tis.private.tmp.sys.agenda: OpenQueue([#])
+tis.private.tmp.sys.bel: {}
+tis.private.tmp.sys.com: {}
+tis.private.tmp.sys.goals: stackset([])
+tis.private.tmp.sys.plan: Stack([])
+tis.private.tmp.sys.qud: stackset([])
+tis.private.tmp.usr.agenda: OpenQueue([#])
+tis.private.tmp.usr.bel: {}
+tis.private.tmp.usr.com: {}
+tis.private.tmp.usr.goals: stackset([])
+tis.private.tmp.usr.plan: Stack([])
+tis.private.tmp.usr.qud: stackset([])
+tis.program_state: RUN
+tis.recent_commitments: {}
+tis.recognized_utterance: None
+tis.repeat_questions: False
+tis.score: 0.0
+tis.shared.com: {}
+tis.shared.goals: stackset([perform(top)])
+tis.shared.lu.moves: {}
+tis.shared.lu.speaker: None
+tis.shared.lu.turn_cont: {}
+tis.shared.pm: {}
+tis.shared.previous_goal: None
+tis.shared.qud: stackset([])
+tis.sys_turns: 0
+tis.timeout.duration: None
+tis.timeout.enabled: False
+<-<-<-<-<-<-<-END->->->->->->>
+
+2017-10-20 14:22:37,516 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:backupSharedSys
+2017-10-20 14:22:37,520 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: backupSharedSys
+-- BEGIN TIS changes --
+- tis.private.tmp.sys.goals: stackset([])
++ tis.private.tmp.sys.goals: stackset([perform(top)])
+?                                      ++++++++++++
+- tis.private.tmp.sys.plan: Stack([])
++ tis.private.tmp.sys.plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
+-- END TIS changes --
+2017-10-20 14:22:37,520 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_action
+2017-10-20 14:22:37,522 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: selectFromPlan
+-- BEGIN TIS changes --
+- tis.private.agenda: OpenQueue([#])
++ tis.private.agenda: OpenQueue([#, findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
+-- END TIS changes --
+2017-10-20 14:22:37,522 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_icm
+2017-10-20 14:22:37,522 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_move
+2017-10-20 14:22:37,526 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: selectAsk
+-- BEGIN TIS changes --
+- tis.next_utterance.alts: []
++ tis.next_utterance.alts: [{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}]
+- tis.next_utterance.moves: OpenQueue([#])
+- tis.next_utterance.plan_item: None
++ tis.next_utterance.moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))])
++ tis.next_utterance.plan_item: findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))
+- tis.private.agenda: OpenQueue([#, findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
++ tis.private.agenda: OpenQueue([#])
+-- END TIS changes --
+2017-10-20 14:22:37,526 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_icm
+2017-10-20 14:22:37,526 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_move
+2017-10-20 14:22:37,526 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:clearContext
+2017-10-20 14:22:37,528 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: clearContext
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 14:22:37,528 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:setGUIContext
+2017-10-20 14:22:37,528 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:set_timeout
+2017-10-20 14:22:37,531 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: setLongTimeout
+-- BEGIN TIS changes --
+- tis.timeout.duration: None
+?                       ^^^^
++ tis.timeout.duration: 5.0
+?                       ^^^
+-- END TIS changes --
+2017-10-20 14:22:37,532 - session_2017-10-20T14_22_37_0 - INFO - DmeModule posts SYSTEM_MOVES_SELECTED with moves=OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')])
+2017-10-20 14:22:37,532 - session_2017-10-20T14_22_37_0 - DEBUG - DmeModule posts Event(SYSTEM_MOVES_SELECTED, {cogload_level: LOW, current_goal: perform(top), device_outputs: Stack([]), top_perform_goal: perform(top), moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')]), bel: {}, facts_being_grounded: [], current_plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))]), next_utterance: NextUtterance(moves=OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))]), context={}, alts=[{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}], plan_item=findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), default_value=None), previous_goal: None, com: {}, cogload_strategy: None}, sender=DmeModule, reason=Event(START, None, sender=Frontend, reason=None))
+2017-10-20 14:22:37,532 - session_2017-10-20T14_22_37_0 - DEBUG - DeviceManager handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 14:22:37,532 - session_2017-10-20T14_22_37_0 - DEBUG - GenerateModule handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 14:22:37,532 - session_2017-10-20T14_22_37_0 - DEBUG - IndependentGuiBackend handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 14:22:37,533 - session_2017-10-20T14_22_37_0 - DEBUG - GuiBackend handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 14:22:37,533 - session_2017-10-20T14_22_37_0 - DEBUG - CogloadModule handles Event(START, None, sender=Frontend, reason=None)
+2017-10-20 14:22:37,533 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None))
+2017-10-20 14:22:37,533 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None)
+2017-10-20 14:22:37,533 - session_2017-10-20T14_22_37_0 - DEBUG - IndependentGuiBackend handles Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None)
+2017-10-20 14:22:37,533 - session_2017-10-20T14_22_37_0 - DEBUG - GuiBackend handles Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None)
+2017-10-20 14:22:37,533 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend is sending event {"content": {"ddd_name": "recipehelp", "language_code": "eng"}, "_sender": "DmeModule", "_reason": null, "event_type": "SET_DDD"}
+2017-10-20 14:22:37,534 - session_2017-10-20T14_22_37_0 - DEBUG - Sent.
+2017-10-20 14:22:37,534 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(FACTS, [], sender=DmeModule, reason=None))
+2017-10-20 14:22:37,534 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(FACTS, [], sender=DmeModule, reason=None)
+2017-10-20 14:22:37,534 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend is sending event {"content": [], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-20 14:22:37,535 - session_2017-10-20T14_22_37_0 - DEBUG - Sent.
+2017-10-20 14:22:37,535 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(SYSTEM_MOVES_SELECTED, {cogload_level: LOW, current_goal: perform(top), device_outputs: Stack([]), top_perform_goal: perform(top), moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')]), bel: {}, facts_being_grounded: [], current_plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))]), next_utterance: NextUtterance(moves=OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))]), context={}, alts=[{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}], plan_item=findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), default_value=None), previous_goal: None, com: {}, cogload_strategy: None}, sender=DmeModule, reason=Event(START, None, sender=Frontend, reason=None)))
+2017-10-20 14:22:37,536 - session_2017-10-20T14_22_37_0 - DEBUG - TurnManager handles Event(SYSTEM_MOVES_SELECTED, {cogload_level: LOW, current_goal: perform(top), device_outputs: Stack([]), top_perform_goal: perform(top), moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')]), bel: {}, facts_being_grounded: [], current_plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))]), next_utterance: NextUtterance(moves=OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))]), context={}, alts=[{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}], plan_item=findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), default_value=None), previous_goal: None, com: {}, cogload_strategy: None}, sender=DmeModule, reason=Event(START, None, sender=Frontend, reason=None))
+2017-10-20 14:22:37,537 - session_2017-10-20T14_22_37_0 - INFO - TurnManager.enter_state(SYSTEM_TURN, echoing System moves selected) (previous state was IDLE)
+2017-10-20 14:22:37,537 - session_2017-10-20T14_22_37_0 - DEBUG - TurnManager posts Event(SYSTEM_MOVES_SELECTED, {cogload_level: LOW, current_goal: perform(top), device_outputs: Stack([]), top_perform_goal: perform(top), moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')]), bel: {}, facts_being_grounded: [], current_plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))]), next_utterance: NextUtterance(moves=OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))]), context={}, alts=[{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}], plan_item=findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), default_value=None), previous_goal: None, com: {}, cogload_strategy: None}, sender=TurnManager, reason=None)
+2017-10-20 14:22:37,538 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(SYSTEM_MOVES_SELECTED, {cogload_level: LOW, current_goal: perform(top), device_outputs: Stack([]), top_perform_goal: perform(top), moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')]), bel: {}, facts_being_grounded: [], current_plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))]), next_utterance: NextUtterance(moves=OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))]), context={}, alts=[{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}], plan_item=findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), default_value=None), previous_goal: None, com: {}, cogload_strategy: None}, sender=TurnManager, reason=None)
+2017-10-20 14:22:37,539 - session_2017-10-20T14_22_37_0 - DEBUG - GenerateModule handles Event(SYSTEM_MOVES_SELECTED, {current_plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))]), bel: {}, cogload_level: LOW, facts_being_grounded: [], top_perform_goal: perform(top), device_outputs: Stack([]), next_utterance: NextUtterance(moves=OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))]), context={}, alts=[{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}], plan_item=findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), default_value=None), previous_goal: None, current_goal: perform(top), moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')]), com: {}, cogload_strategy: None}, sender=TurnManager, reason=None)
+2017-10-20 14:22:37,539 - session_2017-10-20T14_22_37_0 - DEBUG - OutputPlanner._plan_move(move=Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp'), facts={})
+2017-10-20 14:22:37,540 - session_2017-10-20T14_22_37_0 - DEBUG - OutputPlanner._plan_move finished, result is Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')
+2017-10-20 14:22:37,540 - session_2017-10-20T14_22_37_0 - DEBUG - GenerateModule: Generating utterance part from move Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')
+2017-10-20 14:22:37,542 - session_2017-10-20T14_22_37_0 - DEBUG - GenerateModule: Move Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp') generated as u'Do you want to know go to step or know done?'
+2017-10-20 14:22:37,542 - session_2017-10-20T14_22_37_0 - DEBUG - GenerateModule posts Event(SYSTEM_UTTERANCE_TO_SPEAK, [Do you want to know go to step or know done?], sender=GenerateModule, reason=None)
+2017-10-20 14:22:37,544 - session_2017-10-20T14_22_37_0 - DEBUG - IndependentGuiBackend handles Event(SYSTEM_MOVES_SELECTED, {current_plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))]), bel: {}, cogload_level: LOW, facts_being_grounded: [], top_perform_goal: perform(top), device_outputs: Stack([]), next_utterance: NextUtterance(moves=OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))]), context={}, alts=[{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}], plan_item=findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), default_value=None), previous_goal: None, current_goal: perform(top), moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')]), com: {}, cogload_strategy: None}, sender=TurnManager, reason=None)
+2017-10-20 14:22:37,547 - session_2017-10-20T14_22_37_0 - DEBUG - GuiBackend handles Event(SYSTEM_MOVES_SELECTED, {current_plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))]), bel: {}, cogload_level: LOW, facts_being_grounded: [], top_perform_goal: perform(top), device_outputs: Stack([]), next_utterance: NextUtterance(moves=OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))]), context={}, alts=[{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}], plan_item=findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), default_value=None), previous_goal: None, current_goal: perform(top), moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')]), com: {}, cogload_strategy: None}, sender=TurnManager, reason=None)
+2017-10-20 14:22:37,547 - session_2017-10-20T14_22_37_0 - DEBUG - GuiBackend triggered by SYSTEM_MOVES_SELECTED
+2017-10-20 14:22:37,547 - session_2017-10-20T14_22_37_0 - DEBUG - GuiBackend triggered by moves OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')])
+2017-10-20 14:22:37,548 - session_2017-10-20T14_22_37_0 - DEBUG - OutputPlanner._plan_move(move=Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp'), facts={})
+2017-10-20 14:22:37,548 - session_2017-10-20T14_22_37_0 - DEBUG - OutputPlanner._plan_move finished, result is Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp')
+2017-10-20 14:22:37,549 - session_2017-10-20T14_22_37_0 - DEBUG - GuiBackend generated message [<tdm.tdm_gui_protocol.Screen instance at 0x7fc94c063710>]
+2017-10-20 14:22:37,549 - session_2017-10-20T14_22_37_0 - DEBUG - GuiBackend posts Event(MESSAGE_TO_GUI, [<tdm.tdm_gui_protocol.Screen instance at 0x7fc94c063710>], sender=GuiBackend, reason=None)
+2017-10-20 14:22:37,549 - session_2017-10-20T14_22_37_0 - DEBUG - GuiBackend posted event
+2017-10-20 14:22:37,549 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(SYSTEM_UTTERANCE_TO_SPEAK, [Do you want to know go to step or know done?], sender=GenerateModule, reason=None))
+2017-10-20 14:22:37,549 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(SYSTEM_UTTERANCE_TO_SPEAK, [Do you want to know go to step or know done?], sender=GenerateModule, reason=None)
+2017-10-20 14:22:37,549 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend is sending event {"content": ["Do you want to know go to step or know done?"], "_sender": "GenerateModule", "_reason": null, "event_type": "SYSTEM_UTTERANCE_TO_SPEAK"}
+2017-10-20 14:22:37,550 - session_2017-10-20T14_22_37_0 - DEBUG - Sent.
+2017-10-20 14:22:37,550 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(MESSAGE_TO_GUI, [<tdm.tdm_gui_protocol.Screen instance at 0x7fc94c063710>], sender=GuiBackend, reason=None))
+2017-10-20 14:22:37,550 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(MESSAGE_TO_GUI, [<tdm.tdm_gui_protocol.Screen instance at 0x7fc94c063710>], sender=GuiBackend, reason=None)
+2017-10-20 14:22:37,550 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend is sending event {"content": [{"29687f5934314b7ff2716cd9f6c1a5c9.Screen": {"elements": [{"29687f5934314b7ff2716cd9f6c1a5c9.Element": {"name": "move", "title": "", "items": [{"29687f5934314b7ff2716cd9f6c1a5c9.Item": {"attributes": null, "selected": false, "predicted": false, "value": "ask(?X.go_to_step(X))", "title": "Go to step?"}}, {"29687f5934314b7ff2716cd9f6c1a5c9.Item": {"attributes": null, "selected": false, "predicted": false, "value": "ask(?X.go_to_next(X))", "title": "Done?"}}], "format": "", "voice_browsed": false, "value": "", "template": "menu", "type": "list"}}], "name": "top", "title": "The start view"}}], "_sender": "GuiBackend", "_reason": null, "event_type": "MESSAGE_TO_GUI"}
+2017-10-20 14:22:37,551 - session_2017-10-20T14_22_37_0 - DEBUG - Sent.
+2017-10-20 14:22:37,551 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.handle_event_from_external_queue()
+2017-10-20 14:22:37,589 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend received event {"content": ["Do you want to know go to step or know done?"], "_sender": "TextOutputComponent", "_reason": null, "event_type": "SYSTEM_UTTERANCE_REALIZED"}
+2017-10-20 14:22:37,590 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_external_event(...)
+2017-10-20 14:22:37,590 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(SYSTEM_UTTERANCE_REALIZED, [Do you want to know go to step or know done?], sender=TextOutputComponent, reason=None))
+2017-10-20 14:22:37,590 - session_2017-10-20T14_22_37_0 - DEBUG - TurnManager handles Event(SYSTEM_UTTERANCE_REALIZED, [Do you want to know go to step or know done?], sender=TextOutputComponent, reason=None)
+2017-10-20 14:22:37,591 - session_2017-10-20T14_22_37_0 - INFO - TurnManager.enter_state(IDLE, SYS done speaking) (previous state was SYSTEM_TURN)
+2017-10-20 14:22:37,591 - session_2017-10-20T14_22_37_0 - DEBUG - TurnManager posts Event(SYSTEM_MOVES, [Do you want to know go to step or know done?], sender=TurnManager, reason=None)
+2017-10-20 14:22:37,591 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(SYSTEM_MOVES, [Do you want to know go to step or know done?], sender=TurnManager, reason=None)
+2017-10-20 14:22:37,591 - session_2017-10-20T14_22_37_0 - DEBUG - DmeModule handles Event(SYSTEM_MOVES, [Do you want to know go to step or know done?], sender=TurnManager, reason=None)
+2017-10-20 14:22:37,592 - session_2017-10-20T14_22_37_0 - INFO - running ISU module: update (Event(SYSTEM_MOVES, [Do you want to know go to step or know done?], sender=TurnManager, reason=None))
+2017-10-20 14:22:37,593 - session_2017-10-20T14_22_37_0 - DEBUG - <-<-<-<-<-<-<-IS->->->->->->>
+TIS:
+tis._ddd_manager: <tdm.ddd_manager.DddManager object at 0x7fc94db4f090>
+tis._logged_tis_format: diff
+tis._semantic_logic: <tdm.lib.semantic_logic.SemanticLogic object at 0x7fc94c096e90>
+tis.active_ddd: Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})
+tis.cogload_level: LOW
+tis.cogload_management: False
+tis.cogload_strategy: None
+tis.conf_prediction_threshold.acknowledge: 0.8
+tis.conf_prediction_threshold.check: 0.6
+tis.conf_prediction_threshold.normal.acknowledge: 0.9
+tis.conf_prediction_threshold.normal.check: 0.6
+tis.conf_prediction_threshold.normal.trust: 1.01
+tis.conf_prediction_threshold.trust: 1.0
+tis.confidence_profiles.normal.acknowledge: 0.15
+tis.confidence_profiles.normal.check: 0.1
+tis.confidence_profiles.normal.trust: 0.3
+tis.confidence_profiles.relaxed.acknowledge: 0.35
+tis.confidence_profiles.relaxed.check: 0.4
+tis.confidence_profiles.relaxed.trust: 0.4
+tis.confidence_profiles.strict.acknowledge: 0.7
+tis.confidence_profiles.strict.check: 0.4
+tis.confidence_profiles.strict.trust: 0.8
+tis.current_time: 1508502157.59
+tis.ddds: [Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})]
+tis.device_manager: Device Manager: ['RecipehelpDevice']
+tis.device_outputs: Stack([])
+tis.high_cogload_onset_time: None
+tis.input_event: Event(SYSTEM_MOVES, [Do you want to know go to step or know done?], sender=TurnManager, reason=None)
+tis.language_code: eng
+tis.latest_moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])
+tis.latest_moves_amb: {}
+tis.latest_speaker: SYS
+tis.logged_tis_format: diff
+tis.next_utterance.alts: [{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}]
+tis.next_utterance.context: {}
+tis.next_utterance.default_value: None
+tis.next_utterance.moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))])
+tis.next_utterance.plan_item: findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))
+tis.passive_mode: False
+tis.private.agenda: OpenQueue([#])
+tis.private.bel: {}
+tis.private.issues_being_accommodated: {}
+tis.private.nim: OpenQueue([#])
+tis.private.plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
+tis.private.tmp.sys.agenda: OpenQueue([#])
+tis.private.tmp.sys.bel: {}
+tis.private.tmp.sys.com: {}
+tis.private.tmp.sys.goals: stackset([perform(top)])
+tis.private.tmp.sys.plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
+tis.private.tmp.sys.qud: stackset([])
+tis.private.tmp.usr.agenda: OpenQueue([#])
+tis.private.tmp.usr.bel: {}
+tis.private.tmp.usr.com: {}
+tis.private.tmp.usr.goals: stackset([])
+tis.private.tmp.usr.plan: Stack([])
+tis.private.tmp.usr.qud: stackset([])
+tis.program_state: RUN
+tis.recent_commitments: {}
+tis.recognized_utterance: None
+tis.repeat_questions: False
+tis.score: 0.0
+tis.shared.com: {}
+tis.shared.goals: stackset([perform(top)])
+tis.shared.lu.moves: {}
+tis.shared.lu.speaker: None
+tis.shared.lu.turn_cont: {}
+tis.shared.pm: {}
+tis.shared.previous_goal: None
+tis.shared.qud: stackset([])
+tis.sys_turns: 0
+tis.timeout.duration: 5.0
+tis.timeout.enabled: False
+<-<-<-<-<-<-<-END->->->->->->>
+
+2017-10-20 14:22:37,593 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:filterReadings
+2017-10-20 14:22:37,593 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:selectHypothesis
+2017-10-20 14:22:37,593 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:getLatestMoves
+2017-10-20 14:22:37,597 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: getLatestMoves
+-- BEGIN TIS changes --
+- tis.private.nim: OpenQueue([#])
++ tis.private.nim: OpenQueue([Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech), #])
+- tis.shared.lu.speaker: None
+?                        ^^^^
++ tis.shared.lu.speaker: SYS
+?                        ^^^
+-- END TIS changes --
+2017-10-20 14:22:37,597 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:switch_ddd
+2017-10-20 14:22:37,598 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:clearDeviceOutput
+2017-10-20 14:22:37,600 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: clearDeviceOutput
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 14:22:37,600 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:integrateDeviceAction
+2017-10-20 14:22:37,600 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:backupSharedUsr
+2017-10-20 14:22:37,601 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:noFollowupToActionConf
+2017-10-20 14:22:37,601 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:irrelevantFollowup
+2017-10-20 14:22:37,601 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:noFollowupToUndQ
+2017-10-20 14:22:37,601 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:downdateClarification
+2017-10-20 14:22:37,601 - session_2017-10-20T14_22_37_0 - INFO - BEGIN integrate_moves
+2017-10-20 14:22:37,601 - session_2017-10-20T14_22_37_0 - INFO - init_shift: OpenQueue([Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech), #])
+2017-10-20 14:22:37,601 - session_2017-10-20T14_22_37_0 - INFO - BEGIN try_move_integratation_without_accommodation
+2017-10-20 14:22:37,602 - session_2017-10-20T14_22_37_0 - INFO - init_shift: OpenQueue([Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech), #])
+2017-10-20 14:22:37,602 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:integrate
+2017-10-20 14:22:37,605 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: integrateSysAsk
+-- BEGIN TIS changes --
+- tis.private.nim: OpenQueue([Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech), #])
++ tis.private.nim: OpenQueue([#])
+- tis.shared.goals: stackset([perform(top)])
++ tis.shared.goals: stackset([resolve_user(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), perform(top)])
+- tis.shared.lu.turn_cont: {}
++ tis.shared.lu.turn_cont: {Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)}
+- tis.shared.qud: stackset([])
++ tis.shared.qud: stackset([?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])])
+-- END TIS changes --
+2017-10-20 14:22:37,605 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:integrateSysAnswer
+2017-10-20 14:22:37,605 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:downdate_goals
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:removeFindout
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:load_plan
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - INFO - breaking out: nim fully shifted: OpenQueue([#])
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - INFO - END try_move_integratation_without_accommodation
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:removeYesNo
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_action
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_reject
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:accommodate
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - INFO - breaking out of accommodate
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_reject
+2017-10-20 14:22:37,606 - session_2017-10-20T14_22_37_0 - INFO - END integrate_moves
+2017-10-20 14:22:37,607 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 14:22:37,607 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:load_plan
+2017-10-20 14:22:37,607 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:downdate_qud
+2017-10-20 14:22:37,607 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:downdate_goals
+2017-10-20 14:22:37,607 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 14:22:37,608 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:load_plan
+2017-10-20 14:22:37,608 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:removeYesNo
+2017-10-20 14:22:37,608 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:enable_timeout
+2017-10-20 14:22:37,611 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: disableTimeout
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 14:22:37,611 - session_2017-10-20T14_22_37_0 - DEBUG - DmeModule posts Event(FACTS, [], sender=DmeModule, reason=None)
+2017-10-20 14:22:37,611 - session_2017-10-20T14_22_37_0 - DEBUG - DmeModule posts Event(END_SYSTEM_TURN, ({utterance: [Do you want to know go to step or know done?], latest_moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])}, None), sender=DmeModule, reason=None)
+2017-10-20 14:22:37,611 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(FACTS, [], sender=DmeModule, reason=None))
+2017-10-20 14:22:37,611 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(FACTS, [], sender=DmeModule, reason=None)
+2017-10-20 14:22:37,611 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend is sending event {"content": [], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-20 14:22:37,612 - session_2017-10-20T14_22_37_0 - DEBUG - Sent.
+2017-10-20 14:22:37,612 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(END_SYSTEM_TURN, ({utterance: [Do you want to know go to step or know done?], latest_moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])}, None), sender=DmeModule, reason=None))
+2017-10-20 14:22:37,613 - session_2017-10-20T14_22_37_0 - DEBUG - TurnManager handles Event(END_SYSTEM_TURN, ({utterance: [Do you want to know go to step or know done?], latest_moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])}, None), sender=DmeModule, reason=None)
+2017-10-20 14:22:37,613 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(END_SYSTEM_TURN, ({utterance: [Do you want to know go to step or know done?], latest_moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])}, None), sender=DmeModule, reason=None)
+2017-10-20 14:22:37,613 - session_2017-10-20T14_22_37_0 - DEBUG - Backend.handle_event_from_external_queue()
+2017-10-20 14:23:15,083 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend received event {"content": [{"score": 1.0, "utterance": "go to a step"}], "_sender": "TextInputComponent", "_reason": null, "event_type": "RECOGNITION"}
+2017-10-20 14:23:15,083 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_external_event(...)
+2017-10-20 14:23:15,083 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(RECOGNITION, [{score: 1.0, utterance: go to a step}], sender=TextInputComponent, reason=None))
+2017-10-20 14:23:15,083 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(RECOGNITION, [{score: 1.0, utterance: go to a step}], sender=TextInputComponent, reason=None)
+2017-10-20 14:23:15,083 - session_2017-10-20T14_22_37_0 - DEBUG - InterpretModule handles Event(RECOGNITION, [{score: 1.0, utterance: go to a step}], sender=TextInputComponent, reason=None)
+2017-10-20 14:23:15,084 - session_2017-10-20T14_22_37_0 - ANALYTICS - RECOGNITION - {"d4e3f6ea14687580669e21d8f8eb326f.Event": {"content": [{"score": 1.0, "utterance": "go to a step"}], "type": "RECOGNITION", "_sender": "TextInputComponent", "_reason": null}}
+2017-10-20 14:23:15,084 - session_2017-10-20T14_22_37_0 - DEBUG - Starting 'ExactInterpreter'
+2017-10-20 14:23:15,090 - session_2017-10-20T14_22_37_0 - DEBUG - ExactInterpreter: Got exact non-literal interpretations
+2017-10-20 14:23:15,090 - session_2017-10-20T14_22_37_0 - DEBUG - ExactInterpreter: Returning exact interpretations {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])} for DDD 'recipehelp'
+2017-10-20 14:23:15,090 - session_2017-10-20T14_22_37_0 - DEBUG - Result from 'ExactInterpreter': {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}
+2017-10-20 14:23:15,090 - session_2017-10-20T14_22_37_0 - DEBUG - InterpretModule posts Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=InterpretModule, reason=None)
+2017-10-20 14:23:15,091 - session_2017-10-20T14_22_37_0 - ANALYTICS - INTERPRETATION - {"d4e3f6ea14687580669e21d8f8eb326f.Event": {"content": {"08f37221b2c0bde3539cf6828f6374be.Set": {"content": [{"08f37221b2c0bde3539cf6828f6374be.OpenQueue": {"_unshifted_content": null, "front_content": [{"ecb0845d22fdab10cf20c1c1dc2b6a0d.AskMove": {"_type": "ask", "_ddd_name": "recipehelp", "_content": {"445f2b7f7189027ce75dac332c96dde0.WhQuestion": {"_type": "WHQ", "_content": {"24b0f339529d53d987534676834bafa7.LambdaAbstractedPredicateProposition": {"_ontology_name": "RecipehelpOntology", "predicate": {"59344e6b24703bf8b6d12bbc60ef78f6.Predicate": {"sort": {"29469b87e7e7f813b80409572cadd835.BuiltinSort": {"_dynamic": false, "_name": "string"}}, "name": "go_to_next", "grammar_category": null, "_ontology_name": "RecipehelpOntology", "_multiple_instances": false, "feature_of_name": null}}}}}}, "_weighted_score": 1.0, "_score": 1.0, "_utterance": "go to a step", "_modality": "speech", "_background": null, "_speaker": "USR"}}], "back_content": []}}, {"08f37221b2c0bde3539cf6828f6374be.OpenQueue": {"_unshifted_content": null, "front_content": [{"ecb0845d22fdab10cf20c1c1dc2b6a0d.AskMove": {"_type": "ask", "_ddd_name": "recipehelp", "_content": {"445f2b7f7189027ce75dac332c96dde0.WhQuestion": {"_type": "WHQ", "_content": {"24b0f339529d53d987534676834bafa7.LambdaAbstractedPredicateProposition": {"_ontology_name": "RecipehelpOntology", "predicate": {"59344e6b24703bf8b6d12bbc60ef78f6.Predicate": {"sort": {"29469b87e7e7f813b80409572cadd835.BuiltinSort": {"_dynamic": false, "_name": "string"}}, "name": "go_to_step", "grammar_category": null, "_ontology_name": "RecipehelpOntology", "_multiple_instances": false, "feature_of_name": null}}}}}}, "_weighted_score": 1.0, "_score": 1.0, "_utterance": "go to a step", "_modality": "speech", "_background": null, "_speaker": "USR"}}], "back_content": []}}, {"08f37221b2c0bde3539cf6828f6374be.OpenQueue": {"_unshifted_content": null, "front_content": [{"ecb0845d22fdab10cf20c1c1dc2b6a0d.AnswerMove": {"_type": "answer", "_ddd_name": "recipehelp", "_content": {"295b14b878e50960c506a133efa5cd94.Individual": {"_ontology_name": "RecipehelpOntology", "sort": {"29469b87e7e7f813b80409572cadd835.StringSort": {"_dynamic": false, "_name": "string"}}, "value": "go to a step"}}, "_weighted_score": 1.0, "_score": 1.0, "_utterance": "go to a step", "_modality": "speech", "_background": null, "_speaker": "USR"}}], "back_content": []}}], "contentclass": null}}, "type": "INTERPRETATION", "_sender": "InterpretModule", "_reason": null}}
+2017-10-20 14:23:15,091 - session_2017-10-20T14_22_37_0 - DEBUG - DmeModule handles Event(RECOGNITION, [{score: 1.0, utterance: go to a step}], sender=TextInputComponent, reason=None)
+2017-10-20 14:23:15,091 - session_2017-10-20T14_22_37_0 - DEBUG - Backend._handle_event(Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=InterpretModule, reason=None))
+2017-10-20 14:23:15,091 - session_2017-10-20T14_22_37_0 - DEBUG - TurnManager handles Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=InterpretModule, reason=None)
+2017-10-20 14:23:15,092 - session_2017-10-20T14_22_37_0 - DEBUG - TurnManager posts Event(STOP_LISTENING, None, sender=TurnManager, reason=None)
+2017-10-20 14:23:15,092 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(STOP_LISTENING, None, sender=TurnManager, reason=None)
+2017-10-20 14:23:15,092 - session_2017-10-20T14_22_37_0 - DEBUG - Backend communication: Backend is sending event {"content": null, "_sender": "TurnManager", "_reason": null, "event_type": "STOP_LISTENING"}
+2017-10-20 14:23:15,092 - session_2017-10-20T14_22_37_0 - DEBUG - Sent.
+2017-10-20 14:23:15,092 - session_2017-10-20T14_22_37_0 - INFO - TurnManager.enter_state(IDLE, Not interrupting) (previous state was IDLE)
+2017-10-20 14:23:15,093 - session_2017-10-20T14_22_37_0 - DEBUG - TurnManager posts Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=TurnManager, reason=None)
+2017-10-20 14:23:15,093 - session_2017-10-20T14_22_37_0 - DEBUG - EventDispatcher: dispatching event Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=TurnManager, reason=None)
+2017-10-20 14:23:15,096 - session_2017-10-20T14_22_37_0 - DEBUG - DmeModule handles Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=TurnManager, reason=None)
+2017-10-20 14:23:15,096 - session_2017-10-20T14_22_37_0 - INFO - running ISU module: update (Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=TurnManager, reason=None))
+2017-10-20 14:23:15,098 - session_2017-10-20T14_22_37_0 - DEBUG - <-<-<-<-<-<-<-IS->->->->->->>
+TIS:
+tis._ddd_manager: <tdm.ddd_manager.DddManager object at 0x7fc94db4f090>
+tis._logged_tis_format: diff
+tis._semantic_logic: <tdm.lib.semantic_logic.SemanticLogic object at 0x7fc94c096e90>
+tis.active_ddd: Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})
+tis.cogload_level: LOW
+tis.cogload_management: False
+tis.cogload_strategy: None
+tis.conf_prediction_threshold.acknowledge: 0.8
+tis.conf_prediction_threshold.check: 0.6
+tis.conf_prediction_threshold.normal.acknowledge: 0.9
+tis.conf_prediction_threshold.normal.check: 0.6
+tis.conf_prediction_threshold.normal.trust: 1.01
+tis.conf_prediction_threshold.trust: 1.0
+tis.confidence_profiles.normal.acknowledge: 0.15
+tis.confidence_profiles.normal.check: 0.1
+tis.confidence_profiles.normal.trust: 0.3
+tis.confidence_profiles.relaxed.acknowledge: 0.35
+tis.confidence_profiles.relaxed.check: 0.4
+tis.confidence_profiles.relaxed.trust: 0.4
+tis.confidence_profiles.strict.acknowledge: 0.7
+tis.confidence_profiles.strict.check: 0.4
+tis.confidence_profiles.strict.trust: 0.8
+tis.current_time: 1508502195.1
+tis.ddds: [Ddd(u'recipehelp', u'RecipehelpOntology', u'RecipehelpDomain', {'eng': GfGrammar(u'recipehelp', 'eng')})]
+tis.device_manager: Device Manager: ['RecipehelpDevice']
+tis.device_outputs: Stack([])
+tis.high_cogload_onset_time: None
+tis.input_event: Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=TurnManager, reason=None)
+tis.language_code: eng
+tis.latest_moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])
+tis.latest_moves_amb: {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}
+tis.latest_speaker: USR
+tis.logged_tis_format: diff
+tis.next_utterance.alts: [{'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_step(X)), u'POS'), 'labels': [], 'predicted': False}, {'io_status': 'default', 'alt': PropositionWithSemanticContent('GOAL', GoalWithSemanticContent(RecipehelpOntology, RESOLVE_GOAL, SYS, ?X.go_to_next(X)), u'POS'), 'labels': [], 'predicted': False}]
+tis.next_utterance.context: {}
+tis.next_utterance.default_value: None
+tis.next_utterance.moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])))])
+tis.next_utterance.plan_item: findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))
+tis.passive_mode: False
+tis.private.agenda: OpenQueue([#])
+tis.private.bel: {}
+tis.private.issues_being_accommodated: {}
+tis.private.nim: OpenQueue([#])
+tis.private.plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
+tis.private.tmp.sys.agenda: OpenQueue([#])
+tis.private.tmp.sys.bel: {}
+tis.private.tmp.sys.com: {}
+tis.private.tmp.sys.goals: stackset([perform(top)])
+tis.private.tmp.sys.plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
+tis.private.tmp.sys.qud: stackset([])
+tis.private.tmp.usr.agenda: OpenQueue([#])
+tis.private.tmp.usr.bel: {}
+tis.private.tmp.usr.com: {}
+tis.private.tmp.usr.goals: stackset([])
+tis.private.tmp.usr.plan: Stack([])
+tis.private.tmp.usr.qud: stackset([])
+tis.program_state: RUN
+tis.recent_commitments: {}
+tis.recognized_utterance: go to a step
+tis.repeat_questions: False
+tis.score: 1.0
+tis.shared.com: {}
+tis.shared.goals: stackset([resolve_user(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), perform(top)])
+tis.shared.lu.moves: {}
+tis.shared.lu.speaker: SYS
+tis.shared.lu.turn_cont: {Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)}
+tis.shared.pm: {}
+tis.shared.previous_goal: None
+tis.shared.qud: stackset([?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])])
+tis.sys_turns: 0
+tis.timeout.duration: 5.0
+tis.timeout.enabled: False
+<-<-<-<-<-<-<-END->->->->->->>
+
+2017-10-20 14:23:15,098 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:filterReadings
+2017-10-20 14:23:15,107 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: exclude_qud_irrelevant_literal_answer_moves
+-- BEGIN TIS changes --
+- tis.input_event: Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=TurnManager, reason=None)
+?                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^ ---------------------------------------------------------------------------------------------------------------------------------------------------------------
++ tis.input_event: Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=TurnManager, reason=None)
+?                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^
+- tis.latest_moves_amb: {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(answer("go to a step"), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}
+?                                                                                                                                                                                                                                                                                                                                                --------------------------------------------------------------------------------------------------------------------------------------------------------------
++ tis.latest_moves_amb: {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}
+-- END TIS changes --
+2017-10-20 14:23:15,107 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:filterReadings
+2017-10-20 14:23:15,114 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: uprankQUDRelevant
+-- BEGIN TIS changes --
+- tis.input_event: Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}, sender=TurnManager, reason=None)
+?                                                                                                                                                 ^                                                                                                                                                            ^
++ tis.input_event: Event(INTERPRETATION, {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.2, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.2, modality=speech, utterance=u'go to a step'), #])}, sender=TurnManager, reason=None)
+?                                                                                                                                                 ^                                                                                                                                                            ^
+- tis.latest_moves_amb: {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.0, modality=speech, utterance=u'go to a step'), #])}
+?                                                                                                                                ^                                                                                                                                                            ^
++ tis.latest_moves_amb: {OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.2, modality=speech, utterance=u'go to a step'), #]), OpenQueue([Move(ask(?X.go_to_step(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.2, modality=speech, utterance=u'go to a step'), #])}
+?                                                                                                                                ^                                                                                                                                                            ^
+-- END TIS changes --
+2017-10-20 14:23:15,115 - session_2017-10-20T14_22_37_0 - INFO - hypotheses reranking had no effect
+2017-10-20 14:23:15,116 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:selectHypothesis
+2017-10-20 14:23:15,122 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: selectHypothesis
+-- BEGIN TIS changes --
+- tis.latest_moves: OpenQueue([#, Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)])
+?                                           ----------------------------------------------------              ----                                     ^^                              ^
++ tis.latest_moves: OpenQueue([#, Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.2, modality=speech, utterance=u'go to a step')])
+?                                                                                             + ^                              ^                 +++++++++++++++++++++++++++
+- tis.score: 1.0
+?              ^
++ tis.score: 1.2
+?              ^
+-- END TIS changes --
+2017-10-20 14:23:15,122 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:getLatestMoves
+2017-10-20 14:23:15,129 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: getLatestMoves
+-- BEGIN TIS changes --
+- tis.private.nim: OpenQueue([#])
++ tis.private.nim: OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.2, modality=speech, utterance=u'go to a step'), #])
+- tis.shared.lu.speaker: SYS
+?                         ^^
++ tis.shared.lu.speaker: USR
+?                        + ^
++ tis.shared.lu.turn_cont: {}
+- tis.shared.lu.turn_cont: {Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)}
+?            ^^^^^^^^^^^^
++ tis.shared.pm: {Move(ask(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), ddd_name=u'recipehelp', speaker=SYS, score=1.0, weighted_score=1.0, modality=speech)}
+?            ^^
+- tis.shared.pm: {}
+-- END TIS changes --
+2017-10-20 14:23:15,129 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:switch_ddd
+2017-10-20 14:23:15,130 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:clearDeviceOutput
+2017-10-20 14:23:15,132 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: clearDeviceOutput
+-- BEGIN TIS changes --
+-- END TIS changes --
+2017-10-20 14:23:15,132 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:integrateDeviceAction
+2017-10-20 14:23:15,133 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:backupSharedUsr
+2017-10-20 14:23:15,138 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: backupSharedUsr
+-- BEGIN TIS changes --
+- tis.private.tmp.usr.goals: stackset([])
+- tis.private.tmp.usr.plan: Stack([])
+- tis.private.tmp.usr.qud: stackset([])
++ tis.private.tmp.usr.goals: stackset([resolve_user(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), perform(top)])
++ tis.private.tmp.usr.plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
++ tis.private.tmp.usr.qud: stackset([?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])])
+-- END TIS changes --
+2017-10-20 14:23:15,138 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:noFollowupToActionConf
+2017-10-20 14:23:15,138 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:irrelevantFollowup
+2017-10-20 14:23:15,138 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:noFollowupToUndQ
+2017-10-20 14:23:15,138 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:downdateClarification
+2017-10-20 14:23:15,138 - session_2017-10-20T14_22_37_0 - INFO - BEGIN integrate_moves
+2017-10-20 14:23:15,138 - session_2017-10-20T14_22_37_0 - INFO - init_shift: OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.2, modality=speech, utterance=u'go to a step'), #])
+2017-10-20 14:23:15,138 - session_2017-10-20T14_22_37_0 - INFO - BEGIN try_move_integratation_without_accommodation
+2017-10-20 14:23:15,138 - session_2017-10-20T14_22_37_0 - INFO - init_shift: OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.2, modality=speech, utterance=u'go to a step'), #])
+2017-10-20 14:23:15,139 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:integrate
+2017-10-20 14:23:15,144 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: integrateUsrAsk
+-- BEGIN TIS changes --
+- tis.private.agenda: OpenQueue([#])
++ tis.private.agenda: OpenQueue([#, emit_icm(ICMMove(icm:acc*pos)), respond(?X.go_to_next(X))])
+- tis.private.nim: OpenQueue([Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.2, modality=speech, utterance=u'go to a step'), #])
++ tis.private.nim: OpenQueue([#])
+- tis.shared.goals: stackset([resolve_user(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), perform(top)])
++ tis.shared.goals: stackset([resolve(?X.go_to_next(X)), resolve_user(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), perform(top)])
+?                             +++++++++++++++++++++++++++
+- tis.shared.lu.turn_cont: {}
++ tis.shared.lu.turn_cont: {Move(ask(?X.go_to_next(X)), ddd_name=u'recipehelp', speaker=USR, score=1.0, weighted_score=1.2, modality=speech, utterance=u'go to a step')}
+- tis.shared.qud: stackset([?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])])
++ tis.shared.qud: stackset([?X.go_to_next(X), ?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])])
+?                           ++++++++++++++++++
+-- END TIS changes --
+2017-10-20 14:23:15,144 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:integrateSysAnswer
+2017-10-20 14:23:15,144 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:downdate_goals
+2017-10-20 14:23:15,147 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: downdateISSUES2
+-- BEGIN TIS changes --
+- tis.shared.goals: stackset([resolve(?X.go_to_next(X)), resolve_user(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))])), perform(top)])
++ tis.shared.goals: stackset([resolve(?X.go_to_next(X)), perform(top)])
+-- END TIS changes --
+2017-10-20 14:23:15,147 - session_2017-10-20T14_22_37_0 - DEBUG - Testing preconds for rule:removeFindout
+2017-10-20 14:23:15,148 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:load_plan
+2017-10-20 14:23:15,152 - session_2017-10-20T14_22_37_0 - DEBUG - Applied rule: findIssuePlan
+-- BEGIN TIS changes --
+- tis.private.agenda: OpenQueue([#, emit_icm(ICMMove(icm:acc*pos)), respond(?X.go_to_next(X))])
+?                                                                   - ^ ^ -----------------
++ tis.private.agenda: OpenQueue([#, emit_icm(ICMMove(icm:acc*pos)), emit_icm(ICMMove(icm:loadplan))])
+?                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^ ^^
+- tis.private.plan: Stack([findout(?set([goal(resolve(?X.go_to_step(X))), goal(resolve(?X.go_to_next(X)))]))])
++ tis.private.plan: Stack([findout(?X.step_to_choose(X)), device_query(?X.go_to_next(X)), forget(step_to_choose)])
+-- END TIS changes --
+2017-10-20 14:23:15,153 - session_2017-10-20T14_22_37_0 - INFO - breaking out: nim fully shifted: OpenQueue([#])
+2017-10-20 14:23:15,153 - session_2017-10-20T14_22_37_0 - INFO - END try_move_integratation_without_accommodation
+2017-10-20 14:23:15,153 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:removeYesNo
+2017-10-20 14:23:15,153 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_action
+2017-10-20 14:23:15,153 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_reject
+2017-10-20 14:23:15,153 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:accommodate
+2017-10-20 14:23:15,153 - session_2017-10-20T14_22_37_0 - INFO - breaking out of accommodate
+2017-10-20 14:23:15,153 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:select_reject
+2017-10-20 14:23:15,153 - session_2017-10-20T14_22_37_0 - INFO - END integrate_moves
+2017-10-20 14:23:15,154 - session_2017-10-20T14_22_37_0 - DEBUG - rulegroup:exec_plan
+2017-10-20 14:23:15,154 - session_2017-10-20T14_22_37_0 - ERROR - exception in DmeModule
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/tdm/lib/module.py", line 59, in process_event
+    handler()
+  File "/usr/lib64/python2.7/site-packages/tdm/dme_module.py", line 54, in handle_user_moves
+    self._set_input_event_and_run_update_and_select()
+  File "/usr/lib64/python2.7/site-packages/tdm/dme_module.py", line 58, in _set_input_event_and_run_update_and_select
+    self.run_update_and_set_ddd_when_needed()
+  File "/usr/lib64/python2.7/site-packages/tdm/dme_module.py", line 63, in run_update_and_set_ddd_when_needed
+    self.run_update()
+  File "/usr/lib64/python2.7/site-packages/tdm/dme_module.py", line 107, in run_update
+    self.update_module.run(self.tis())
+  File "tdm/update.py", line 166, in tdm.update.UpdateModule.run (tdm/update.c:8834)
+  File "/usr/lib64/python2.7/site-packages/tdm/maharani/maharanilib.py", line 425, in repeatGroupSequence
+    if self._apply(ruleGroup, identifier, tis):
+  File "/usr/lib64/python2.7/site-packages/tdm/maharani/maharanilib.py", line 436, in _apply
+    if self.applyRule(rule, tis):
+  File "/usr/lib64/python2.7/site-packages/tdm/maharani/maharanilib.py", line 362, in applyRule
+    if rule.testPreconditions(self._ddd_manager, tis):
+  File "/usr/lib64/python2.7/site-packages/tdm/maharani/maharanilib.py", line 273, in testPreconditions
+    return self.preconditions(ddd_manager, self.tis)
+  File "tdm/update.py", line 1912, in tdm.update.exec_findoutFromDevice.preconditions (tdm/update.c:78944)
+  File "/usr/lib64/python2.7/site-packages/tdm/tis.py", line 1325, in get_resolving_results_from_devices
+    all_results = device_handler.query_all(question, self.shared.com)
+  File "/usr/lib64/python2.7/site-packages/tdm/device_handler.py", line 153, in query_all
+    self._validate_query_result(result_descriptions, query)
+  File "/usr/lib64/python2.7/site-packages/tdm/device_handler.py", line 160, in _validate_query_result
+    for result in result_descriptions:
+TypeError: 'NoneType' object is not iterable
+2017-10-20 14:23:15,163 - session_2017-10-20T14_22_37_0 - DEBUG - DmeModule posts Event(BACKEND_ERROR, None, sender=DmeModule, reason=None)

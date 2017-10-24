@@ -1,0 +1,158 @@
+[E 171019 15:23:15 websocket:415] Uncaught exception in /websocket
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/websocket.py", line 412, in _run_callback
+        callback(*args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 36, in on_message
+        self._handle_message(message)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 46, in _handle_message
+        self._register(message)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 74, in _register
+        self._backend.initialize()
+      File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 407, in initialize
+        self._backend.initialize()
+      File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 245, in initialize
+        self.add_ddds(self._ddds, [self.language_code])
+      File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 271, in add_ddds
+        ddd_names, languages=languages, logger=self.logger, use_word_list_correction=use_word_list_correction)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 12, in ddds_as_list
+        ddds_dict = self._load_ddds(ddds, *args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 24, in _load_ddds
+        ddds[ddd_name] = self._load_ddd(ddd_name, *args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 30, in _load_ddd
+        return ddd_loader.load(only_py_domain)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 49, in load
+        device_class = self._load_py_module_class(device_module, DddDevice)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 151, in _load_py_module_class
+        module = self._load_py_module(module_path)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 134, in _load_py_module
+        return imp.load_source(ddd_module_name, module_filename)
+      File "device.py", line 4, in <module>
+      File "device.py", line 5, in RecipehelpDevice
+    NameError: name 'DeviceWHQuery' is not defined
+[E 171024 11:15:47 event_handling:42] exception in TextInputComponent
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/event_handling.py", line 40, in _process_event
+        handler()
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/text_input_component.py", line 17, in _get_and_post_input
+        string = self.get_input()
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/text_input_component.py", line 23, in get_input
+        stdin_encoded_string = raw_input()
+    EOFError
+[E 171024 11:23:49 event_handling:42] exception in TextInputComponent
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/event_handling.py", line 40, in _process_event
+        handler()
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/text_input_component.py", line 17, in _get_and_post_input
+        string = self.get_input()
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/text_input_component.py", line 23, in get_input
+        stdin_encoded_string = raw_input()
+    EOFError
+[E 171024 12:10:42 websocket:415] Uncaught exception in /websocket
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/websocket.py", line 412, in _run_callback
+        callback(*args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 36, in on_message
+        self._handle_message(message)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 46, in _handle_message
+        self._register(message)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 74, in _register
+        self._backend.initialize()
+      File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 407, in initialize
+        self._backend.initialize()
+      File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 245, in initialize
+        self.add_ddds(self._ddds, [self.language_code])
+      File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 271, in add_ddds
+        ddd_names, languages=languages, logger=self.logger, use_word_list_correction=use_word_list_correction)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 12, in ddds_as_list
+        ddds_dict = self._load_ddds(ddds, *args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 24, in _load_ddds
+        ddds[ddd_name] = self._load_ddd(ddd_name, *args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 30, in _load_ddd
+        return ddd_loader.load(only_py_domain)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 56, in load
+        domain = self._compile_domain(ontology, parser, only_py_domain)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 100, in _compile_domain
+        domain_args = self._domain_as_dict(ontology, parser, only_py)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 119, in _domain_as_dict
+        domain_as_dict = self._xml_compiler.compile_domain(self._name, domain_xml, ontology, parser)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 32, in compile_domain
+        return DomainCompiler().compile(*args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 162, in compile
+        self._compile_plans()
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 190, in _compile_plans
+        for element in elements]
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 195, in _compile_goal_element
+        self._compile_plan(plan, element, "plan", default=Plan([]))
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 222, in _compile_plan
+        plan_items = self._compile_plan_item_nodes(plan_elements[0].childNodes)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 275, in _compile_plan_item_nodes
+        if node.__class__ == xml.dom.minidom.Element]
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 299, in _compile_plan_item_element
+        "unknown plan item element %s" % element.toxml())
+    DddXmlCompilerException: unknown plan item element <postplan>
+          <jumpto predicate="say_step" question_type="wh_question" type="resolve"/>
+        </postplan>
+[E 171024 12:13:48 websocket:415] Uncaught exception in /websocket
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tornado/websocket.py", line 412, in _run_callback
+        callback(*args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 36, in on_message
+        self._handle_message(message)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 46, in _handle_message
+        self._register(message)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 74, in _register
+        self._backend.initialize()
+      File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 407, in initialize
+        self._backend.initialize()
+      File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 245, in initialize
+        self.add_ddds(self._ddds, [self.language_code])
+      File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 271, in add_ddds
+        ddd_names, languages=languages, logger=self.logger, use_word_list_correction=use_word_list_correction)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 12, in ddds_as_list
+        ddds_dict = self._load_ddds(ddds, *args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 24, in _load_ddds
+        ddds[ddd_name] = self._load_ddd(ddd_name, *args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 30, in _load_ddd
+        return ddd_loader.load(only_py_domain)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 56, in load
+        domain = self._compile_domain(ontology, parser, only_py_domain)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 100, in _compile_domain
+        domain_args = self._domain_as_dict(ontology, parser, only_py)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 119, in _domain_as_dict
+        domain_as_dict = self._xml_compiler.compile_domain(self._name, domain_xml, ontology, parser)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 32, in compile_domain
+        return DomainCompiler().compile(*args, **kwargs)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 162, in compile
+        self._compile_plans()
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 190, in _compile_plans
+        for element in elements]
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 195, in _compile_goal_element
+        self._compile_plan(plan, element, "plan", default=Plan([]))
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 222, in _compile_plan
+        plan_items = self._compile_plan_item_nodes(plan_elements[0].childNodes)
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 275, in _compile_plan_item_nodes
+        if node.__class__ == xml.dom.minidom.Element]
+      File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 299, in _compile_plan_item_element
+        "unknown plan item element %s" % element.toxml())
+    DddXmlCompilerException: unknown plan item element <postplan>
+          <jumpto predicate="say_step" question_type="wh_question" type="resolve"/>
+        </postplan>
+[E 171024 16:42:43 event_handling:42] exception in TextOutputComponent
+    Traceback (most recent call last):
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/event_handling.py", line 40, in _process_event
+        handler()
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/output_component.py", line 14, in handle_system_utterance_to_speak
+        self.output(utterance_parts, self._output_completed)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/text_output_component.py", line 10, in output
+        callback(utterance_parts)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/output_component.py", line 20, in _output_completed
+        self.post_system_utterance_realized_event(utterance_parts)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/output_component.py", line 25, in post_system_utterance_realized_event
+        self.post_event(event)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/frontend/frontend_component.py", line 24, in post_event
+        self._communicator.send(event)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/communicator.py", line 39, in send
+        self.websocket_connection.send(event_as_json)
+      File "/usr/lib64/python2.7/site-packages/tdm/maharani/websocket_connection.py", line 119, in send
+        raise WebSocketException("cannot send packages when the client is disconnected")
+    WebSocketException: cannot send packages when the client is disconnected

@@ -1,0 +1,94 @@
+2017-10-24 13:22:32,095 - TdmApplication - DEBUG - DddDb().__init__(name='ddds', default_ddds=[u'recipehelp'])
+2017-10-24 13:22:32,095 - TdmApplication - DEBUG - DddDb(): DB file name is '/home/gusmatssar/recipedialogue/tdm/ddds.json'
+2017-10-24 13:22:32,108 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session=None).open()
+2017-10-24 13:22:32,110 - TdmApplication - DEBUG - thread_manager.create_thread() with threading.active_count()=3
+2017-10-24 13:22:32,110 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session=None).on_message({"handshake_content": {"session_id": null, "keep_session_alive": false}, "name": "Frontend"})
+2017-10-24 13:22:32,110 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session=None)._register({"handshake_content": {"session_id": null, "keep_session_alive": false}, "name": "Frontend"})
+2017-10-24 13:22:32,111 - TdmApplication - DEBUG - thread_manager.create_thread() with threading.active_count()=4
+2017-10-24 13:22:32,112 - TdmApplication - DEBUG - Creating backend and session with id 2017-10-24T13_22_32_0.
+2017-10-24 13:22:32,151 - TdmApplication - DEBUG - FrontendConnectionHandler._register: Registered in session 2017-10-24T13_22_32_0 with backend <ThreadedBackend(ThreadedBackend, started daemon 140263593121536)>.
+2017-10-24 13:22:32,153 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(REGISTER_BACKEND, None, sender=Backend, reason=None))
+2017-10-24 13:22:32,153 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": null, "_sender": "Backend", "_reason": null, "event_type": "REGISTER_BACKEND"}
+2017-10-24 13:22:32,153 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:32,166 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_message({"content": null, "_sender": "Frontend", "_reason": null, "event_type": "FRONTEND_READY"})
+2017-10-24 13:22:32,169 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(BACKEND_READY, None, sender=Backend, reason=None))
+2017-10-24 13:22:32,169 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": null, "_sender": "Backend", "_reason": null, "event_type": "BACKEND_READY"}
+2017-10-24 13:22:32,169 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:32,171 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_message({"content": null, "_sender": "Frontend", "_reason": null, "event_type": "START"})
+2017-10-24 13:22:32,207 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(SET_DDD, {ddd_name: recipehelp, language_code: eng}, sender=DmeModule, reason=None))
+2017-10-24 13:22:32,207 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": {"ddd_name": "recipehelp", "language_code": "eng"}, "_sender": "DmeModule", "_reason": null, "event_type": "SET_DDD"}
+2017-10-24 13:22:32,207 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:32,208 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(FACTS, [], sender=DmeModule, reason=None))
+2017-10-24 13:22:32,208 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-24 13:22:32,208 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:32,217 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(SYSTEM_UTTERANCE_TO_SPEAK, [, What would you like to do?], sender=GenerateModule, reason=None))
+2017-10-24 13:22:32,217 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": ["", "What would you like to do?"], "_sender": "GenerateModule", "_reason": null, "event_type": "SYSTEM_UTTERANCE_TO_SPEAK"}
+2017-10-24 13:22:32,217 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:32,217 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(MESSAGE_TO_GUI, [], sender=GuiBackend, reason=None))
+2017-10-24 13:22:32,218 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [], "_sender": "GuiBackend", "_reason": null, "event_type": "MESSAGE_TO_GUI"}
+2017-10-24 13:22:32,218 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:32,258 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_message({"content": ["", "What would you like to do?"], "_sender": "TextOutputComponent", "_reason": null, "event_type": "SYSTEM_UTTERANCE_REALIZED"})
+2017-10-24 13:22:32,280 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(FACTS, [], sender=DmeModule, reason=None))
+2017-10-24 13:22:32,280 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-24 13:22:32,280 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:42,880 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_message({"content": [{"score": 1.0, "utterance": "go to step one"}], "_sender": "TextInputComponent", "_reason": null, "event_type": "RECOGNITION"})
+2017-10-24 13:22:42,891 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(STOP_LISTENING, None, sender=TurnManager, reason=None))
+2017-10-24 13:22:42,891 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": null, "_sender": "TurnManager", "_reason": null, "event_type": "STOP_LISTENING"}
+2017-10-24 13:22:42,891 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:42,991 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(SELECTED_RECOGNITION, go to step one, sender=DmeModule, reason=None))
+2017-10-24 13:22:42,991 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": "go to step one", "_sender": "DmeModule", "_reason": null, "event_type": "SELECTED_RECOGNITION"}
+2017-10-24 13:22:42,991 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:42,992 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(FACTS, [{predicate: go_to_step, grammar_entry: None, value: chose step1}], sender=DmeModule, reason=None))
+2017-10-24 13:22:42,993 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [{"predicate": "go_to_step", "grammar_entry": null, "value": "chose step1"}], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-24 13:22:42,993 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:43,006 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(SYSTEM_UTTERANCE_TO_SPEAK, [Ok chose step1.], sender=GenerateModule, reason=None))
+2017-10-24 13:22:43,006 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": ["Ok chose step1."], "_sender": "GenerateModule", "_reason": null, "event_type": "SYSTEM_UTTERANCE_TO_SPEAK"}
+2017-10-24 13:22:43,006 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:43,007 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(GUI.POPUP, {options: [], title: Ok chose step1.}, sender=IndependentGuiBackend, reason=None))
+2017-10-24 13:22:43,008 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": {"options": [], "title": "Ok chose step1."}, "_sender": "IndependentGuiBackend", "_reason": null, "event_type": "GUI.POPUP"}
+2017-10-24 13:22:43,008 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:43,010 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(MESSAGE_TO_GUI, [<tdm.tdm_gui_protocol.Popup instance at 0x7f91a92107e8>], sender=GuiBackend, reason=None))
+2017-10-24 13:22:43,011 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [{"Popup": {"elements": [], "title": "Ok chose step1."}}], "_sender": "GuiBackend", "_reason": null, "event_type": "MESSAGE_TO_GUI"}
+2017-10-24 13:22:43,011 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:43,014 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_message({"content": ["Ok chose step1."], "_sender": "TextOutputComponent", "_reason": null, "event_type": "SYSTEM_UTTERANCE_REALIZED"})
+2017-10-24 13:22:43,042 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(FACTS, [{predicate: go_to_step, grammar_entry: None, value: chose step1}], sender=DmeModule, reason=None))
+2017-10-24 13:22:43,042 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [{"predicate": "go_to_step", "grammar_entry": null, "value": "chose step1"}], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-24 13:22:43,042 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,115 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_message({"content": [{"score": 1.0, "utterance": "go to next step"}], "_sender": "TextInputComponent", "_reason": null, "event_type": "RECOGNITION"})
+2017-10-24 13:22:58,119 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(FACTS, [], sender=DmeModule, reason=None))
+2017-10-24 13:22:58,119 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-24 13:22:58,119 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,127 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(STOP_SPEAKING, None, sender=TurnManager, reason=None))
+2017-10-24 13:22:58,127 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": null, "_sender": "TurnManager", "_reason": null, "event_type": "STOP_SPEAKING"}
+2017-10-24 13:22:58,128 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,132 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(SYSTEM_UTTERANCE_TO_SPEAK, [Returning to the start view., What would you like to do?], sender=GenerateModule, reason=None))
+2017-10-24 13:22:58,132 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": ["Returning to the start view.", "What would you like to do?"], "_sender": "GenerateModule", "_reason": null, "event_type": "SYSTEM_UTTERANCE_TO_SPEAK"}
+2017-10-24 13:22:58,132 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,133 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(MESSAGE_TO_GUI, [<tdm.tdm_gui_protocol.ClosePopup instance at 0x7f91a9220a70>], sender=GuiBackend, reason=None))
+2017-10-24 13:22:58,133 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [{"ClosePopup": {}}], "_sender": "GuiBackend", "_reason": null, "event_type": "MESSAGE_TO_GUI"}
+2017-10-24 13:22:58,134 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,136 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_message({"content": ["Returning to the start view.", "What would you like to do?"], "_sender": "TextOutputComponent", "_reason": null, "event_type": "SYSTEM_UTTERANCE_REALIZED"})
+2017-10-24 13:22:58,161 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(FACTS, [], sender=DmeModule, reason=None))
+2017-10-24 13:22:58,161 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-24 13:22:58,161 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,230 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(SELECTED_RECOGNITION, go to next step, sender=DmeModule, reason=None))
+2017-10-24 13:22:58,231 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": "go to next step", "_sender": "DmeModule", "_reason": null, "event_type": "SELECTED_RECOGNITION"}
+2017-10-24 13:22:58,231 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,232 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(FACTS, [], sender=DmeModule, reason=None))
+2017-10-24 13:22:58,232 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [], "_sender": "DmeModule", "_reason": null, "event_type": "FACTS"}
+2017-10-24 13:22:58,232 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,240 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(SYSTEM_UTTERANCE_TO_SPEAK, [, Went to next], sender=GenerateModule, reason=None))
+2017-10-24 13:22:58,240 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": ["", "Went to next"], "_sender": "GenerateModule", "_reason": null, "event_type": "SYSTEM_UTTERANCE_TO_SPEAK"}
+2017-10-24 13:22:58,241 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,241 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(GUI.POPUP, {options: [], title: Went to next}, sender=IndependentGuiBackend, reason=None))
+2017-10-24 13:22:58,242 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": {"options": [], "title": "Went to next"}, "_sender": "IndependentGuiBackend", "_reason": null, "event_type": "GUI.POPUP"}
+2017-10-24 13:22:58,242 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,243 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_event(Event(MESSAGE_TO_GUI, [<tdm.tdm_gui_protocol.DeviceResult instance at 0x7f91a9a771b8>, <tdm.tdm_gui_protocol.Popup instance at 0x7f91a92207e8>], sender=GuiBackend, reason=None))
+2017-10-24 13:22:58,243 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): writing {"content": [{"DeviceResult": {"action": "go_to_next", "result": true, "arguments": {}, "failure_reason": null}}, {"Popup": {"elements": [], "title": "Went to next"}}], "_sender": "GuiBackend", "_reason": null, "event_type": "MESSAGE_TO_GUI"}
+2017-10-24 13:22:58,243 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0'): OK
+2017-10-24 13:22:58,267 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_message({"content": ["", "Went to next"], "_sender": "TextOutputComponent", "_reason": null, "event_type": "SYSTEM_UTTERANCE_REALIZED"})
+2017-10-24 13:23:47,007 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140263634147664, session='2017-10-24T13_22_32_0').on_close()
+2017-10-24 13:23:47,007 - TdmApplication - DEBUG - SessionManager.stop('2017-10-24T13_22_32_0')
+2017-10-24 13:23:47,010 - TdmApplication - DEBUG - TdmApplication.stop(): Stopping HTTP server
+2017-10-24 13:23:47,010 - TdmApplication - DEBUG - TdmApplication.stop(): Stopping IO-loop
+2017-10-24 13:23:47,010 - TdmApplication - DEBUG - TdmApplication.stop(): Stopping sessions []

@@ -1,0 +1,56 @@
+2017-10-24 12:10:42,126 - TdmApplication - DEBUG - DddDb().__init__(name='ddds', default_ddds=[u'recipehelp'])
+2017-10-24 12:10:42,126 - TdmApplication - DEBUG - DddDb(): DB file name is '/home/gusmatssar/recipedialogue/tdm/ddds.json'
+2017-10-24 12:10:42,137 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140719479638352, session=None).open()
+2017-10-24 12:10:42,140 - TdmApplication - DEBUG - thread_manager.create_thread() with threading.active_count()=3
+2017-10-24 12:10:42,140 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140719479638352, session=None).on_message({"handshake_content": {"session_id": null, "keep_session_alive": false}, "name": "Frontend"})
+2017-10-24 12:10:42,140 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140719479638352, session=None)._register({"handshake_content": {"session_id": null, "keep_session_alive": false}, "name": "Frontend"})
+2017-10-24 12:10:42,141 - TdmApplication - DEBUG - thread_manager.create_thread() with threading.active_count()=4
+2017-10-24 12:10:42,142 - TdmApplication - DEBUG - Creating backend and session with id 2017-10-24T12_10_42_0.
+2017-10-24 12:10:42,180 - TdmApplication - ERROR - Error trying to receive message u'{"handshake_content": {"session_id": null, "keep_session_alive": false}, "name": "Frontend"}'.
+Traceback (most recent call last):
+  File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 36, in on_message
+    self._handle_message(message)
+  File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 46, in _handle_message
+    self._register(message)
+  File "/usr/lib64/python2.7/site-packages/tdm/maharani/session_management/frontend_connection_handler.py", line 74, in _register
+    self._backend.initialize()
+  File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 407, in initialize
+    self._backend.initialize()
+  File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 245, in initialize
+    self.add_ddds(self._ddds, [self.language_code])
+  File "/usr/lib64/python2.7/site-packages/tdm/backend.py", line 271, in add_ddds
+    ddd_names, languages=languages, logger=self.logger, use_word_list_correction=use_word_list_correction)
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 12, in ddds_as_list
+    ddds_dict = self._load_ddds(ddds, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 24, in _load_ddds
+    ddds[ddd_name] = self._load_ddd(ddd_name, *args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_set_loader.py", line 30, in _load_ddd
+    return ddd_loader.load(only_py_domain)
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 56, in load
+    domain = self._compile_domain(ontology, parser, only_py_domain)
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 100, in _compile_domain
+    domain_args = self._domain_as_dict(ontology, parser, only_py)
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_loader.py", line 119, in _domain_as_dict
+    domain_as_dict = self._xml_compiler.compile_domain(self._name, domain_xml, ontology, parser)
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 32, in compile_domain
+    return DomainCompiler().compile(*args, **kwargs)
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 162, in compile
+    self._compile_plans()
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 190, in _compile_plans
+    for element in elements]
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 195, in _compile_goal_element
+    self._compile_plan(plan, element, "plan", default=Plan([]))
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 222, in _compile_plan
+    plan_items = self._compile_plan_item_nodes(plan_elements[0].childNodes)
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 275, in _compile_plan_item_nodes
+    if node.__class__ == xml.dom.minidom.Element]
+  File "/usr/lib64/python2.7/site-packages/tdm/ddd_xml_compiler.py", line 299, in _compile_plan_item_element
+    "unknown plan item element %s" % element.toxml())
+DddXmlCompilerException: unknown plan item element <postplan>
+      <jumpto predicate="say_step" question_type="wh_question" type="resolve"/>
+    </postplan>
+2017-10-24 12:10:42,192 - TdmApplication - DEBUG - FrontendConnectionHandler(id=140719479638352, session='2017-10-24T12_10_42_0').on_close()
+2017-10-24 12:10:42,192 - TdmApplication - DEBUG - SessionManager.stop('2017-10-24T12_10_42_0')
+2017-10-24 12:13:42,852 - TdmApplication - DEBUG - TdmApplication.stop(): Stopping HTTP server
+2017-10-24 12:13:42,852 - TdmApplication - DEBUG - TdmApplication.stop(): Stopping IO-loop
+2017-10-24 12:13:42,852 - TdmApplication - DEBUG - TdmApplication.stop(): Stopping sessions []

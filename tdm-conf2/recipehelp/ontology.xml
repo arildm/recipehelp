@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="RecipehelpOntology">
+    <sort name="step"/>
+    <sort name="Boolean"/>
+    <sort name="yn"/>
+    <individual name="step1" sort="step"/>
+    <individual name="step2" sort="step"/>
+    <individual name="step3" sort="step"/>
+    <individual name="step4" sort="step"/>
+    <individual name="step5" sort="step"/>
+
+    <individual name="True" sort="Boolean"/>
+    <individual name="False" sort="Boolean"/>
+
+    <predicate name="confirmation_yn" sort="string"/>
+    <predicate name="confirmation" sort="yn"/>
+
+    <predicate name="done" sort="Boolean"/>
+    <predicate name="step_to_choose" sort="step"/>	
+    <predicate name="go_to_step" sort="string"/>
+    <action name="go_to_next"/>
+    <action name="go_back"/>
+
+    <action name="confirmation_action"/>
+
+    <action name="say_step"/>
+</ontology>
