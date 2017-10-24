@@ -12,7 +12,7 @@ class RecipehelpDevice(DddDevice):
 	class go_to_step(DeviceWHQuery):
 		PARAMETERS = ["step_to_choose"]
 		def perform(self,step):
-			self._step = int(step[4:])
+			self.device._step = int(step[4:])
 			return ["chose a step"]
 
 
