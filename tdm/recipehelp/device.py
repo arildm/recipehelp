@@ -18,20 +18,21 @@ class RecipehelpDevice(DddDevice):
 		PARAMETERS = ["step_to_choose"]
 		def perform(self,step):
 			self.device._step = int(step[4:])
-			return ["chose step"+ str(self.device._step)]
+			return ["chose step "+ str(self.device._step)]
 
 
 	class go_to_next(DeviceAction):
 		def perform(self):
-			if self.device._step <=2:
+			if self.device._step <=4:
 				self.device._step += 1
 				return True
 			else:
-				return ["All the steps have been completed"]
+				output = "All the steps have been completed"
+				return True
 
 	class go_back(DeviceAction):
 		def perform(self):
-			if self.device._step >= 2 :
+			if self.device._step >= 4 :
 				self.device._step -= 1
 				return True
 			else:

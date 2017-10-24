@@ -57,7 +57,7 @@
     </one-of>
   </action>
 
-  <report action="go_to_next" status="ended">went to next</report>
+  <report action="go_to_next" status="ended">next</report>
 
   <action name="go_back">
     <one-of>
