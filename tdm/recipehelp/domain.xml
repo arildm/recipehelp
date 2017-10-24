@@ -7,9 +7,23 @@
             <forget predicate="step_to_choose"/>
         </plan>
         <postplan>
-            <jumpto type="resolve" question_type="wh_question" predicate="say_step"/>
+            <jumpto type="perform" action="say_step"/>
         </postplan>
     </goal>
+
+
+  <goal type="perform" action="say_step">
+        <plan>
+            <dev_perform action="say_step" device="RecipehelpDevice" postconfirm="true"/>
+        </plan>
+    <postcond>
+      <device_activity_terminated action="say_step"/>
+    </postcond>
+    <postplan>
+      <jumpto type="perform" action="confirmation_action"/>
+    </postplan>
+</goal>
+
 
   <goal type="perform" action="top">
 	<plan>
@@ -28,7 +42,7 @@
       <device_activity_terminated action="go_to_next"/>
     </postcond>
     <postplan>
-      <jumpto type="resolve" question_type="wh_question" predicate="say_step"/>
+      <jumpto type="perform" action="say_step"/>
     </postplan>
     </goal>
 
@@ -42,23 +56,28 @@
       <device_activity_terminated action="go_back"/>
     </postcond>
     <postplan>
-      <jumpto type="resolve" question_type="wh_question" predicate="say_step"/>
+      <jumpto type="perform" action="say_step"/>
     </postplan>
     </goal>
 
 
-  <goal type="resolve" question_type="wh_question" predicate="say_step">
-        <plan>
-            <dev_query device="RecipehelpDevice" type="wh_question" predicate="say_step"/>
-            <!-- <findout type="wh_question" predicate="done"/>
-           <forget predicate="done"/> --> 
-           <findout type="wh_question" predicate="done"/>
-           <forget predicate="done"/>
-        </plan>
-    <postplan>
-      <jumpto type="resolve" question_type="wh_question" predicate="say_step"/>
-    </postplan>
-    </goal>
+<goal type="perform" action="confirmation_action">
+    <plan>
+        <forget predicate="confirmation_yn"/>
+        <findout type="wh_question" predicate="confirmation_yn"/>
+        <dev_query device="RecipehelpDevice" type="wh_question" predicate="confirmation"/>
+        <if>
+            <condition><proposition predicate="confirmation" value="yes"/></condition>
+            <then>
+                <jumpto type="perform" action="go_to_next"/>
+            </then>
+            <else>
+                <jumpto type="perform" action="say_step"/>
+            </else>
+        </if>
+    </plan>
+</goal>
+
 
 </domain>
 

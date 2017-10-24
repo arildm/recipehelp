@@ -27,16 +27,45 @@
 
 <question speaker="system" predicate="done" type="wh_question">are you done</question>
 
-<question speaker="all" predicate="say_step" type="wh_question">tell me what to do</question>
+<!-- <question speaker="all" predicate="say_step" type="wh_question">tell me what to do</question>
 <question speaker="user" predicate="say_step" type="wh_question"> 
     <one-of>
       <item>tell me what to do</item>
       <item>what should i do</item>
     </one-of>
 </question>
+ -->
+    <action name="say_step">
+        <one-of>
+            <item>tell me what to do</item>
+            <item>what should i do</item>
+        </one-of>
+    </action>
 
-<answer speaker="system" predicate="say_step"> ok <slot predicate="say_step"/></answer>
+ <!-- <report action="say_step" status="ended">step ended</report> -->
 
+
+    <action name="confirmation_action">
+        <one-of>
+            <item>confirm</item>
+            <item>sorry</item>
+        </one-of>
+    </action>
+
+    <question speaker="system" predicate="confirmation" type="wh_question">Have you done it?</question>
+<!--     <answer speaker="system" predicate="step_one"> Ok, <slot predicate="step_one"/> </answer>
+    <answer speaker="system" predicate="step_two"> Ok, <slot predicate="step_two"/> </answer> -->
+    
+    <individual name="yes">ok</individual>
+    <individual name="no">no</individual>
+
+
+<question speaker="system" predicate="confirmation_yn" type="wh_question">are you done</question>
+
+
+
+<!-- <answer speaker="system" predicate="say_step"> so, <slot predicate="say_step"/></answer>
+ -->
 
 
 

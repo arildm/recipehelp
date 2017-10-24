@@ -1,7 +1,6 @@
 from tdm.lib.device import DddDevice, EntityRecognizer, DeviceWHQuery, DeviceAction
 
-recipelist = ["Step one: preheat the oven to 180 degrees.",
-"Step two: Make the ragu. Heat the olive oil in a frying pan and fry the celery, carrots and onion for approximately 15 minutes. Add the beef and pork. Pour in red wine and stir well. Cook for 45 minutes.",
+recipelist = ["Step one: preheat the oven to 180 degrees.", "Step two: Make the ragu. Heat the olive oil in a frying pan and fry the celery, carrots and onion for approximately 15 minutes. Add the beef and pork. Pour in red wine and stir well. Cook for 45 minutes.",
 "Step three: add the tomatoes and stock. Cook slowly for two hours. Season with salt and freshly ground black pepper.",
 "Step four: make the bechamel sauce. Place the milk in a saucepan, add nutmeg and bring to the boil. In a separate saucepan melt the butter and add the flour. Remove the milk from the heat and add a little to the flour mixture. .",
 "Step five: assemble lasagne. Blanch the pasta in salted boiling water for three minutes. Spoon a third of the bechamel sauce into the bottom of a lasagne dish in a layer, then place some of the pasta strips over the top. Follow this with some of the mozzarella and parmesan, and sprinkle over freshly ground black pepper. Follow with a layer of ragu. Repeat this step twice until all the ingredients have been used up. Dot knobs of butter over the surface and cook in the oven for 30 minutes"]
@@ -39,19 +38,35 @@ class RecipehelpDevice(DddDevice):
 				self.device._step = 1
 				return True
 
-	class say_step(DeviceWHQuery):
+	class say_step(DeviceAction):
 		def perform(self):
 			if self.device._step == 1:
-				return [recipelist[0]]
+				output = recipelist[0]
+				return True
 			elif self.device._step == 2:
-				return [recipelist[1]]
+				output = recipelist[1]
+				return True
 			elif self.device._step == 3:
-				return [recipelist[2]]
+				output = recipelist[2]
+				return True
 			elif self.device._step == 4:
-				return [recipelist[3]]
+				output = recipelist[3]
+				return True
 			elif self.device._step == 5:
-				return [recipelist[4]]
+				output = recipelist[4]
+				return True
 			else:
-				return ["You can choose a step from one to five"]
+				output = "You can choose a step from one to five"
+				return True
+
+
+	class confirmation(DeviceWHQuery):
+		PARAMETERS = ["confirmation_yn"]
+		def perform(self, confirmationyn ):
+			if confirmationyn == "yes":
+				return ["yes"]
+			else:
+				return ["no"]
+
 
 	# return [str(self.device._step)]
