@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<grammar>
+    <individual name="True">Yes</individual>
+    <individual name="False">No</individual>
+
+    <action name="rec1">pumpkin soup</action>
+    <question speaker="all" predicate="rec1step1" type="wh_question">Cut pumpkin, chili and garlic. Are you done</question>
+    <question speaker="all" predicate="rec1step2" type="wh_question">Bake pumpkin, chili and garlic in the oven. Are you done</question>
+    <question speaker="all" predicate="rec1step3" type="wh_question">Blend the baked things with milk. Are you done</question>
+    <report action="Rec1" status="ended">Enjoy your pumpkin soup.</report>
+
+    <action name="rec2">lasagna</action>
+    <question speaker="all" predicate="rec2step1" type="wh_question">Chop onions and fry with minced meat and spices. Are you done</question>
+    <question speaker="all" predicate="rec2step2" type="wh_question">Make bechamel sauce from milk, butter and flour. Are you done</question>
+    <question speaker="all" predicate="rec2step3" type="wh_question">Put layers of pasta sheets, ragu and bechamel in a pan. Are you done</question>
+    <question speaker="all" predicate="rec2step4" type="wh_question">Bake in the oven for 40 minutes. Are you done</question>
+    <report action="Rec2" status="ended">Enjoy your lasagna.</report>
+
+    <action name="top"><np><indefinite>start view</indefinite></np></action>
+
+    <action name="up">back</action>
+</grammar>

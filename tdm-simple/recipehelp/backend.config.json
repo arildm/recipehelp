@@ -1,0 +1,13 @@
+{
+    "active_ddd": "",
+    "asr": "none",
+    "ddds": [
+        ""
+    ],
+    "repeat_questions": true,
+    "supported_languages": [
+        "eng"
+    ],
+    "use_recognition_profile": false,
+    "use_word_list_correction": false
+}

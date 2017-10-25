@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ontology name="RecipehelpOntology">
+    <sort name="Boolean"/>
+
+    <individual name="True" sort="Boolean"/>
+    <individual name="False" sort="Boolean"/>
+
+    <action name="rec1"/>
+    <predicate name="rec1step1" sort="Boolean"/>
+    <predicate name="rec1step2" sort="Boolean"/>
+    <predicate name="rec1step3" sort="Boolean"/>
+
+    <action name="rec2"/>
+    <predicate name="rec2step1" sort="Boolean"/>
+    <predicate name="rec2step2" sort="Boolean"/>
+    <predicate name="rec2step3" sort="Boolean"/>
+    <predicate name="rec2step4" sort="Boolean"/>
+</ontology>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<domain name="RecipehelpDomain" is_super_domain="true">
+
+    <goal type="perform" action="top">
+        <plan>
+            <forget_all/>
+            <findout type="alt_question">
+                <alt><perform action="rec1"/></alt>
+                <alt><perform action="rec2"/></alt>
+            </findout>
+        </plan>
+    </goal>
+
+    <goal type="perform" action="rec1">
+        <plan>
+            <findout type="wh_question" predicate="rec1step1"/>
+            <findout type="wh_question" predicate="rec1step2"/>
+            <findout type="wh_question" predicate="rec1step3"/>
+            <dev_perform device="RecipehelpDevice" action="Rec1" postconfirm="true"/>
+        </plan>
+        <postcond>
+            <device_activity_terminated action="Rec1"/>
+        </postcond>
+        <postplan>
+            <forget predicate="rec1step1"/>
+            <forget predicate="rec1step2"/>
+            <forget predicate="rec1step3"/>
+        </postplan>
+    </goal>
+
+    <goal type="perform" action="rec2">
+        <plan>
+            <findout type="wh_question" predicate="rec2step1"/>
+            <findout type="wh_question" predicate="rec2step2"/>
+            <findout type="wh_question" predicate="rec2step3"/>
+            <findout type="wh_question" predicate="rec2step4"/>
+            <dev_perform device="RecipehelpDevice" action="Rec2" postconfirm="true"/>
+        </plan>
+        <postcond>
+            <device_activity_terminated action="Rec2"/>
+        </postcond>
+        <postplan>
+            <forget predicate="rec2step1"/>
+            <forget predicate="rec2step2"/>
+            <forget predicate="rec2step3"/>
+            <forget predicate="rec2step4"/>
+        </postplan>
+    </goal>
+
+</domain>
+
+
+
+

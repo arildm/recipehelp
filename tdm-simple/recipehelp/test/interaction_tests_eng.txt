@@ -1,0 +1,10 @@
+--- main menu
+S> What would you like to do?
+U> pumpkin soup
+S> Cut pumpkin, chili and garlic. Are you done?
+U> yes
+S> Bake pumpkin, chili and garlic in the oven. Are you done?
+U> no
+S> Blend the baked things with milk. Are you done?
+U> yes
+S> Enjoy your pumpkin soup.
