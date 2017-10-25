@@ -17,6 +17,5 @@
     <report action="Rec2" status="ended">Enjoy your lasagna.</report>
 
     <action name="top"><np><indefinite>start view</indefinite></np></action>
-
     <action name="up">back</action>
 </grammar>

@@ -1,5 +1,5 @@
---- main menu
-S> What would you like to do?
+--- Recipe 1
+S> Do you want to pumpkin soup or lasagna?
 U> pumpkin soup
 S> Cut pumpkin, chili and garlic. Are you done?
 U> yes
@@ -8,3 +8,16 @@ U> no
 S> Blend the baked things with milk. Are you done?
 U> yes
 S> Enjoy your pumpkin soup.
+
+--- Recipe 2
+S> Do you want to pumpkin soup or lasagna?
+U> lasagna
+S> Chop onions and fry with minced meat and spices. Are you done?
+U> yes
+S> Make bechamel sauce from milk, butter and flour. Are you done?
+U> yes
+S> Put layers of pasta sheets, ragu and bechamel in a pan. Are you done?
+U> yes
+S> Bake in the oven for 40 minutes. Are you done?
+U> yes
+S> Enjoy your lasagna.
