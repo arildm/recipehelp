@@ -18,7 +18,7 @@ class RecipehelpDevice(DddDevice):
 		PARAMETERS = ["step_to_choose"]
 		def perform(self,step):
 			self.device._step = int(step[4:])
-			return ["chose step "+ str(self.device._step)]
+			return ["you have chosen step "+ str(self.device._step)]
 
 
 	class go_to_next(DeviceAction):

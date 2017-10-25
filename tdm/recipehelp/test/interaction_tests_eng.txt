@@ -1,10 +1,38 @@
 --- main menu
-S> Do you want to know go to step?
-U> Step one
-S> Okay. Step one: Chop onions and garlic.
+S> What would you like to do?
+U> go to a step
+S> Which step?
+U> step one
+S> Ok you have chosen step 1.
+U> go to next
+S> Next
+S> Are you done?
+
+--- tell me what to do
+
+S> What would you like to do?
+U> tell me what to do
+S> Are you done?
+U> yes
+S> Ok Step one: preheat the oven to 180 degrees..
 
 --- next
-U> done
-S> Are you done with step one?
-U> Yes.
-S> Okay. Step two: Bring oil to heat in a pan.
+
+S> What would you like to do?
+U> tell me what to do
+S> Are you done?
+U> yes
+S> Ok Step one: preheat the oven to 180 degrees..
+U> tell me what to do
+S> Are you done?
+U> no
+S> Ok Step one: preheat the oven to 180 degrees..
+U> go to next
+S> Next
+S> Are you done?
+U> go to next
+S> Next
+S> Are you done?
+U> tell me what to do
+S> Ok Step three: add the tomatoes and stock. Cook slowly for two hours. Season with salt and freshly ground black pepper..
+

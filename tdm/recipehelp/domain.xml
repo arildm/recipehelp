@@ -46,12 +46,9 @@
     </postplan>
     </goal>
 
-
   <goal type="resolve" question_type="wh_question" predicate="say_step">
         <plan>
             <dev_query device="RecipehelpDevice" type="wh_question" predicate="say_step"/>
-            <!-- <findout type="wh_question" predicate="done"/>
-           <forget predicate="done"/> --> 
            <findout type="wh_question" predicate="done"/>
            <forget predicate="done"/>
         </plan>
@@ -61,7 +58,3 @@
     </goal>
 
 </domain>
-
-
-
-
